@@ -1,0 +1,4 @@
+<map id="Message" name="Message">
+<area shape="rect" id="node2" href="$class_action_msg.html" title="ActionMsg" alt="" coords="5,80,89,107"/>
+<area shape="rect" id="node3" href="$class_telemetry_msg.html" title="TelemetryMsg" alt="" coords="113,80,219,107"/>
+</map>

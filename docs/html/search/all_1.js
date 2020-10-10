@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['simulador_20sistemas_20embebidos_20robotino',['Simulador Sistemas Embebidos Robotino',['../index.html',1,'']]]
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['message',['Message',['../class_message.html',1,'']]]
 ];
