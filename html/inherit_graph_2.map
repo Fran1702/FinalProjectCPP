@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classMessage.html" title="Clase Mensaje. " alt="" coords="5,56,80,83"/>
+<area shape="rect" id="node2" href="$classActionMsg.html" title="Clase mensaje de accion de control. " alt="" coords="139,5,223,32"/>
+<area shape="rect" id="node3" href="$classCameraMsg.html" title="Clase mensaje de camara. " alt="" coords="134,56,227,83"/>
+<area shape="rect" id="node4" href="$classTelemetryMsg.html" title="Clase mensaje de telemetria. " alt="" coords="128,107,233,133"/>
+</map>

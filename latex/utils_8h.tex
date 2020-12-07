@@ -1,0 +1,143 @@
+\hypertarget{utils_8h}{}\section{src/utils.h File Reference}
+\label{utils_8h}\index{src/utils.\+h@{src/utils.\+h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$condition\+\_\+variable$>$}\newline
+Include dependency graph for utils.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{utils_8h_ac0e2b53a3ea9ebce1dacd9413579ec69}{M\+S\+G\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER}~\char`\"{}\+:\char`\"{}
+\item 
+\#define \hyperlink{utils_8h_af392d7ee4f29a6a09970819dbd725c20}{M\+S\+G\+\_\+\+I\+MU}~\char`\"{}msg\+\_\+\+I\+MU\char`\"{}
+\item 
+\#define \hyperlink{utils_8h_a341cff82fa08399b66ed950cd301ffb6}{M\+S\+G\+\_\+\+C\+AM}~\char`\"{}msg\+\_\+\+C\+AM\char`\"{}
+\item 
+\#define \hyperlink{utils_8h_a43ca248958b3afe7f7c898a9e62b5a9c}{M\+S\+G\+\_\+\+B\+OM}~\char`\"{}msg\+\_\+\+B\+OM\char`\"{}
+\item 
+\#define \hyperlink{utils_8h_abf71abaffc4210c79acd651db9db90f8}{M\+S\+G\+\_\+\+L\+AS}~\char`\"{}msg\+\_\+\+L\+AS\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \hyperlink{utils_8h_ac026bb3b390444587a444a6b62655867}{Read\+\_\+\+C\+S\+V\+\_\+\+I\+M\+U\+\_\+\+C\+AM} (string input\+File\+Name)
+\item 
+string \hyperlink{utils_8h_ae1f0b848799389e13cbdedd8a79bde42}{decode\+\_\+msg} (string s, double v\mbox{[}3\mbox{]})
+\item 
+void \hyperlink{utils_8h_a94789c6523de64a6dda7f9b290bbd522}{print\+\_\+init\+Menu} (void)
+\item 
+void \hyperlink{utils_8h_a1263999c182e68e204b84696cd247caa}{print\+\_\+end\+Menu} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{utils_8h_a43ca248958b3afe7f7c898a9e62b5a9c}\label{utils_8h_a43ca248958b3afe7f7c898a9e62b5a9c}} 
+\index{utils.\+h@{utils.\+h}!M\+S\+G\+\_\+\+B\+OM@{M\+S\+G\+\_\+\+B\+OM}}
+\index{M\+S\+G\+\_\+\+B\+OM@{M\+S\+G\+\_\+\+B\+OM}!utils.\+h@{utils.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+G\+\_\+\+B\+OM}{MSG\_BOM}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+B\+OM~\char`\"{}msg\+\_\+\+B\+OM\char`\"{}}
+
+
+
+Definition at line 19 of file utils.\+h.
+
+\mbox{\Hypertarget{utils_8h_a341cff82fa08399b66ed950cd301ffb6}\label{utils_8h_a341cff82fa08399b66ed950cd301ffb6}} 
+\index{utils.\+h@{utils.\+h}!M\+S\+G\+\_\+\+C\+AM@{M\+S\+G\+\_\+\+C\+AM}}
+\index{M\+S\+G\+\_\+\+C\+AM@{M\+S\+G\+\_\+\+C\+AM}!utils.\+h@{utils.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+G\+\_\+\+C\+AM}{MSG\_CAM}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+C\+AM~\char`\"{}msg\+\_\+\+C\+AM\char`\"{}}
+
+
+
+Definition at line 18 of file utils.\+h.
+
+\mbox{\Hypertarget{utils_8h_ac0e2b53a3ea9ebce1dacd9413579ec69}\label{utils_8h_ac0e2b53a3ea9ebce1dacd9413579ec69}} 
+\index{utils.\+h@{utils.\+h}!M\+S\+G\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER@{M\+S\+G\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER}}
+\index{M\+S\+G\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER@{M\+S\+G\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER}!utils.\+h@{utils.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+G\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER}{MSG\_DELIMITER}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+D\+E\+L\+I\+M\+I\+T\+ER~\char`\"{}\+:\char`\"{}}
+
+
+
+Definition at line 16 of file utils.\+h.
+
+\mbox{\Hypertarget{utils_8h_af392d7ee4f29a6a09970819dbd725c20}\label{utils_8h_af392d7ee4f29a6a09970819dbd725c20}} 
+\index{utils.\+h@{utils.\+h}!M\+S\+G\+\_\+\+I\+MU@{M\+S\+G\+\_\+\+I\+MU}}
+\index{M\+S\+G\+\_\+\+I\+MU@{M\+S\+G\+\_\+\+I\+MU}!utils.\+h@{utils.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+G\+\_\+\+I\+MU}{MSG\_IMU}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+I\+MU~\char`\"{}msg\+\_\+\+I\+MU\char`\"{}}
+
+
+
+Definition at line 17 of file utils.\+h.
+
+\mbox{\Hypertarget{utils_8h_abf71abaffc4210c79acd651db9db90f8}\label{utils_8h_abf71abaffc4210c79acd651db9db90f8}} 
+\index{utils.\+h@{utils.\+h}!M\+S\+G\+\_\+\+L\+AS@{M\+S\+G\+\_\+\+L\+AS}}
+\index{M\+S\+G\+\_\+\+L\+AS@{M\+S\+G\+\_\+\+L\+AS}!utils.\+h@{utils.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+G\+\_\+\+L\+AS}{MSG\_LAS}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+L\+AS~\char`\"{}msg\+\_\+\+L\+AS\char`\"{}}
+
+
+
+Definition at line 20 of file utils.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{utils_8h_ae1f0b848799389e13cbdedd8a79bde42}\label{utils_8h_ae1f0b848799389e13cbdedd8a79bde42}} 
+\index{utils.\+h@{utils.\+h}!decode\+\_\+msg@{decode\+\_\+msg}}
+\index{decode\+\_\+msg@{decode\+\_\+msg}!utils.\+h@{utils.\+h}}
+\subsubsection{\texorpdfstring{decode\+\_\+msg()}{decode\_msg()}}
+{\footnotesize\ttfamily string decode\+\_\+msg (\begin{DoxyParamCaption}\item[{string}]{s,  }\item[{double}]{v\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 85 of file utils.\+cpp.
+
+\mbox{\Hypertarget{utils_8h_a1263999c182e68e204b84696cd247caa}\label{utils_8h_a1263999c182e68e204b84696cd247caa}} 
+\index{utils.\+h@{utils.\+h}!print\+\_\+end\+Menu@{print\+\_\+end\+Menu}}
+\index{print\+\_\+end\+Menu@{print\+\_\+end\+Menu}!utils.\+h@{utils.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+end\+Menu()}{print\_endMenu()}}
+{\footnotesize\ttfamily void print\+\_\+end\+Menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 13 of file utils.\+cpp.
+
+\mbox{\Hypertarget{utils_8h_a94789c6523de64a6dda7f9b290bbd522}\label{utils_8h_a94789c6523de64a6dda7f9b290bbd522}} 
+\index{utils.\+h@{utils.\+h}!print\+\_\+init\+Menu@{print\+\_\+init\+Menu}}
+\index{print\+\_\+init\+Menu@{print\+\_\+init\+Menu}!utils.\+h@{utils.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+init\+Menu()}{print\_initMenu()}}
+{\footnotesize\ttfamily void print\+\_\+init\+Menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file utils.\+cpp.
+
+\mbox{\Hypertarget{utils_8h_ac026bb3b390444587a444a6b62655867}\label{utils_8h_ac026bb3b390444587a444a6b62655867}} 
+\index{utils.\+h@{utils.\+h}!Read\+\_\+\+C\+S\+V\+\_\+\+I\+M\+U\+\_\+\+C\+AM@{Read\+\_\+\+C\+S\+V\+\_\+\+I\+M\+U\+\_\+\+C\+AM}}
+\index{Read\+\_\+\+C\+S\+V\+\_\+\+I\+M\+U\+\_\+\+C\+AM@{Read\+\_\+\+C\+S\+V\+\_\+\+I\+M\+U\+\_\+\+C\+AM}!utils.\+h@{utils.\+h}}
+\subsubsection{\texorpdfstring{Read\+\_\+\+C\+S\+V\+\_\+\+I\+M\+U\+\_\+\+C\+A\+M()}{Read\_CSV\_IMU\_CAM()}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Read\+\_\+\+C\+S\+V\+\_\+\+I\+M\+U\+\_\+\+C\+AM (\begin{DoxyParamCaption}\item[{string}]{input\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 44 of file utils.\+cpp.
+

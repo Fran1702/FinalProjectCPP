@@ -1,0 +1,146 @@
+\hypertarget{robsim_8cpp}{}\section{src/robsim.cpp File Reference}
+\label{robsim_8cpp}\index{src/robsim.\+cpp@{src/robsim.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include \char`\"{}sensors.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}robsim.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+Include dependency graph for robsim.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{robsim_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{robsim_8cpp_a7ac2ec469c5986de6309d55a49dece55}{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+R\+D\+U\+I\+NO}~0.\+1;
+\item 
+\#define \hyperlink{robsim_8cpp_a19199de75b4f4eb26cb503afea095e91}{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+M\+E\+RA}~0.\+1;
+\item 
+\#define \hyperlink{robsim_8cpp_acc46c880b139b5895f6a8236b3aff526}{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+R\+A\+S\+PI}~0.\+1;
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{robsim_8cpp_abfd055405fc0db9a96a29057436d7e6b}{time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms} (struct timeval $\ast$t0, int n, double dt)
+\begin{DoxyCompactList}\small\item\em Calcula el tiempo faltante para el siguiente intervalo. \end{DoxyCompactList}\item 
+void \hyperlink{robsim_8cpp_ae9bdf1cf8a02cfad30e904f75ede4f4e}{espera\+\_\+siguiente\+\_\+intervalo} (struct timeval $\ast$t0, int n, double dt)
+\begin{DoxyCompactList}\small\item\em Función bloqueante que espera hasta el siguiente intervalor. \end{DoxyCompactList}\item 
+void \hyperlink{robsim_8cpp_a40a893993ca0fba530429f44aa0b176f}{f} (bool $\ast$flag)
+\item 
+void \hyperlink{robsim_8cpp_a075142c6dceedf39581a5038d5c9edf7}{Cam\+Th} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{robsim_8cpp_a7ac2ec469c5986de6309d55a49dece55}\label{robsim_8cpp_a7ac2ec469c5986de6309d55a49dece55}} 
+\index{robsim.\+cpp@{robsim.\+cpp}!S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+R\+D\+U\+I\+NO@{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+R\+D\+U\+I\+NO}}
+\index{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+R\+D\+U\+I\+NO@{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+R\+D\+U\+I\+NO}!robsim.\+cpp@{robsim.\+cpp}}
+\subsubsection{\texorpdfstring{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+R\+D\+U\+I\+NO}{SAMPLE\_TIME\_ARDUINO}}
+{\footnotesize\ttfamily \#define S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+A\+R\+D\+U\+I\+NO~0.\+1;}
+
+
+
+Definition at line 18 of file robsim.\+cpp.
+
+\mbox{\Hypertarget{robsim_8cpp_a19199de75b4f4eb26cb503afea095e91}\label{robsim_8cpp_a19199de75b4f4eb26cb503afea095e91}} 
+\index{robsim.\+cpp@{robsim.\+cpp}!S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+M\+E\+RA@{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+M\+E\+RA}}
+\index{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+M\+E\+RA@{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+M\+E\+RA}!robsim.\+cpp@{robsim.\+cpp}}
+\subsubsection{\texorpdfstring{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+M\+E\+RA}{SAMPLE\_TIME\_CAMERA}}
+{\footnotesize\ttfamily \#define S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+C\+A\+M\+E\+RA~0.\+1;}
+
+
+
+Definition at line 19 of file robsim.\+cpp.
+
+\mbox{\Hypertarget{robsim_8cpp_acc46c880b139b5895f6a8236b3aff526}\label{robsim_8cpp_acc46c880b139b5895f6a8236b3aff526}} 
+\index{robsim.\+cpp@{robsim.\+cpp}!S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+R\+A\+S\+PI@{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+R\+A\+S\+PI}}
+\index{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+R\+A\+S\+PI@{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+R\+A\+S\+PI}!robsim.\+cpp@{robsim.\+cpp}}
+\subsubsection{\texorpdfstring{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+R\+A\+S\+PI}{SAMPLE\_TIME\_RASPI}}
+{\footnotesize\ttfamily \#define S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+R\+A\+S\+PI~0.\+1;}
+
+
+
+Definition at line 20 of file robsim.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{robsim_8cpp_a075142c6dceedf39581a5038d5c9edf7}\label{robsim_8cpp_a075142c6dceedf39581a5038d5c9edf7}} 
+\index{robsim.\+cpp@{robsim.\+cpp}!Cam\+Th@{Cam\+Th}}
+\index{Cam\+Th@{Cam\+Th}!robsim.\+cpp@{robsim.\+cpp}}
+\subsubsection{\texorpdfstring{Cam\+Th()}{CamTh()}}
+{\footnotesize\ttfamily void Cam\+Th (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 286 of file robsim.\+cpp.
+
+\mbox{\Hypertarget{robsim_8cpp_ae9bdf1cf8a02cfad30e904f75ede4f4e}\label{robsim_8cpp_ae9bdf1cf8a02cfad30e904f75ede4f4e}} 
+\index{robsim.\+cpp@{robsim.\+cpp}!espera\+\_\+siguiente\+\_\+intervalo@{espera\+\_\+siguiente\+\_\+intervalo}}
+\index{espera\+\_\+siguiente\+\_\+intervalo@{espera\+\_\+siguiente\+\_\+intervalo}!robsim.\+cpp@{robsim.\+cpp}}
+\subsubsection{\texorpdfstring{espera\+\_\+siguiente\+\_\+intervalo()}{espera\_siguiente\_intervalo()}}
+{\footnotesize\ttfamily void espera\+\_\+siguiente\+\_\+intervalo (\begin{DoxyParamCaption}\item[{struct timeval $\ast$}]{t0,  }\item[{int}]{n,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Función bloqueante que espera hasta el siguiente intervalor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $\ast$t0} & puntero a timeval con el tiempo incial del experimento \\
+\hline
+\mbox{\tt in}  & {\em n} & numero de intervalo \\
+\hline
+\mbox{\tt in}  & {\em dt} & paso de tiempo \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file robsim.\+cpp.
+
+\mbox{\Hypertarget{robsim_8cpp_a40a893993ca0fba530429f44aa0b176f}\label{robsim_8cpp_a40a893993ca0fba530429f44aa0b176f}} 
+\index{robsim.\+cpp@{robsim.\+cpp}!f@{f}}
+\index{f@{f}!robsim.\+cpp@{robsim.\+cpp}}
+\subsubsection{\texorpdfstring{f()}{f()}}
+{\footnotesize\ttfamily void f (\begin{DoxyParamCaption}\item[{bool $\ast$}]{flag }\end{DoxyParamCaption})}
+
+
+
+Definition at line 209 of file robsim.\+cpp.
+
+\mbox{\Hypertarget{robsim_8cpp_abfd055405fc0db9a96a29057436d7e6b}\label{robsim_8cpp_abfd055405fc0db9a96a29057436d7e6b}} 
+\index{robsim.\+cpp@{robsim.\+cpp}!time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms@{time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms}}
+\index{time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms@{time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms}!robsim.\+cpp@{robsim.\+cpp}}
+\subsubsection{\texorpdfstring{time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms()}{time\_falt\_next\_interv\_ms()}}
+{\footnotesize\ttfamily int time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms (\begin{DoxyParamCaption}\item[{struct timeval $\ast$}]{t0,  }\item[{int}]{n,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Calcula el tiempo faltante para el siguiente intervalo. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $\ast$t0} & puntero a timeval con el tiempo incial del experimento \\
+\hline
+\mbox{\tt in}  & {\em n} & numero de intervalor \\
+\hline
+\mbox{\tt in}  & {\em dt} & paso de tiempo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tiempo en ms hasta el intervalo n 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file robsim.\+cpp.
+

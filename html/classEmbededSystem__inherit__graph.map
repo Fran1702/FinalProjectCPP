@@ -1,0 +1,6 @@
+<map id="EmbededSystem" name="EmbededSystem">
+<area shape="rect" id="node2" href="$classArduinoL.html" title="Clase que representa el Arduino dedicado al sistema 2 El metodo main es el bucle infinito del SE..." alt="" coords="5,80,79,107"/>
+<area shape="rect" id="node3" href="$classArduinoR.html" title="Clase que representa el Arduino dedicado al sistema 1 El metodo main es el bucle infinito del SE Here..." alt="" coords="103,80,179,107"/>
+<area shape="rect" id="node4" href="$classCamera.html" title="Clase que representa la camara El metodo main es el bucle infinito del SE. " alt="" coords="203,80,271,107"/>
+<area shape="rect" id="node5" href="$classRaspi.html" title="Clase que representa la Raspberry El metodo main es el bucle infinito del SE. " alt="" coords="295,80,351,107"/>
+</map>

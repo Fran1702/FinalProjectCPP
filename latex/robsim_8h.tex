@@ -1,0 +1,155 @@
+\hypertarget{robsim_8h}{}\section{src/robsim.h File Reference}
+\label{robsim_8h}\index{src/robsim.\+h@{src/robsim.\+h}}
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include \char`\"{}sensors.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+Include dependency graph for robsim.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{robsim_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{robsim_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classEmbededSystem}{Embeded\+System}
+\begin{DoxyCompactList}\small\item\em a Clase base Sistema embebido Tiene como metodo virtual puro el main de los SE \end{DoxyCompactList}\item 
+class \hyperlink{classArduinoR}{ArduinoR}
+\begin{DoxyCompactList}\small\item\em Clase que representa el Arduino dedicado al sistema 1 El metodo main es el bucle infinito del SE Hereda de la clase Sistema Embebido. \end{DoxyCompactList}\item 
+class \hyperlink{classArduinoL}{ArduinoL}
+\begin{DoxyCompactList}\small\item\em Clase que representa el Arduino dedicado al sistema 2 El metodo main es el bucle infinito del SE. \end{DoxyCompactList}\item 
+class \hyperlink{classRaspi}{Raspi}
+\begin{DoxyCompactList}\small\item\em Clase que representa la Raspberry El metodo main es el bucle infinito del SE. \end{DoxyCompactList}\item 
+class \hyperlink{classCamera}{Camera}
+\begin{DoxyCompactList}\small\item\em Clase que representa la camara El metodo main es el bucle infinito del SE. \end{DoxyCompactList}\item 
+class \hyperlink{classActuator}{Actuator}
+\begin{DoxyCompactList}\small\item\em Clase base actuadores. \end{DoxyCompactList}\item 
+class \hyperlink{classJetPump}{Jet\+Pump}
+\begin{DoxyCompactList}\small\item\em Clase \hyperlink{classJetPump}{Jet\+Pump}. \end{DoxyCompactList}\item 
+class \hyperlink{classSensor}{Sensor}
+\begin{DoxyCompactList}\small\item\em Clase base sensores. \end{DoxyCompactList}\item 
+class \hyperlink{classDistSens}{Dist\+Sens}
+\begin{DoxyCompactList}\small\item\em Clase que representa el sensor de dist. \end{DoxyCompactList}\item 
+class \hyperlink{classMessage}{Message}
+\begin{DoxyCompactList}\small\item\em Clase Mensaje. \end{DoxyCompactList}\item 
+class \hyperlink{classTelemetryMsg}{Telemetry\+Msg}
+\begin{DoxyCompactList}\small\item\em Clase mensaje de telemetria. \end{DoxyCompactList}\item 
+class \hyperlink{classActionMsg}{Action\+Msg}
+\begin{DoxyCompactList}\small\item\em Clase mensaje de accion de control. \end{DoxyCompactList}\item 
+class \hyperlink{classCameraMsg}{Camera\+Msg}
+\begin{DoxyCompactList}\small\item\em Clase mensaje de camara. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{robsim_8h_a6a7d0aa2f8672b5fd4207bf9a4d2912d}{M\+S\+G\+\_\+\+T\+E\+L\+E\+M\+E\+T\+RY}~\hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2babb3d2d909c73fe49800949a344775f8b}{Message\+::\+Type\+::\+T\+E\+L\+E\+M\+E\+T\+RY}
+\item 
+\#define \hyperlink{robsim_8h_add686b3cb16e812ad19e05944997c2a7}{M\+S\+G\+\_\+\+A\+C\+T\+I\+ON}~\hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2bae58a1b00942e66d8b4abc960da7877ab}{Message\+::\+Type\+::\+A\+C\+T\+I\+ON}
+\item 
+\#define \hyperlink{robsim_8h_ad066d2f092a3d1bb49aca1f9524c66c3}{M\+S\+G\+\_\+\+C\+A\+M\+E\+RA}~\hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2baddf0d6b21537d984fea6544f58101fa8}{Message\+::\+Type\+::\+C\+A\+M\+E\+RA}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{robsim_8h_abfd055405fc0db9a96a29057436d7e6b}{time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms} (struct timeval $\ast$t0, int n, double dt)
+\begin{DoxyCompactList}\small\item\em Calcula el tiempo faltante para el siguiente intervalo. \end{DoxyCompactList}\item 
+void \hyperlink{robsim_8h_ae9bdf1cf8a02cfad30e904f75ede4f4e}{espera\+\_\+siguiente\+\_\+intervalo} (struct timeval $\ast$t0, int n, double dt)
+\begin{DoxyCompactList}\small\item\em Función bloqueante que espera hasta el siguiente intervalor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Francisco Ortiz 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{robsim_8h_add686b3cb16e812ad19e05944997c2a7}\label{robsim_8h_add686b3cb16e812ad19e05944997c2a7}} 
+\index{robsim.\+h@{robsim.\+h}!M\+S\+G\+\_\+\+A\+C\+T\+I\+ON@{M\+S\+G\+\_\+\+A\+C\+T\+I\+ON}}
+\index{M\+S\+G\+\_\+\+A\+C\+T\+I\+ON@{M\+S\+G\+\_\+\+A\+C\+T\+I\+ON}!robsim.\+h@{robsim.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+G\+\_\+\+A\+C\+T\+I\+ON}{MSG\_ACTION}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+A\+C\+T\+I\+ON~\hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2bae58a1b00942e66d8b4abc960da7877ab}{Message\+::\+Type\+::\+A\+C\+T\+I\+ON}}
+
+
+
+Definition at line 15 of file robsim.\+h.
+
+\mbox{\Hypertarget{robsim_8h_ad066d2f092a3d1bb49aca1f9524c66c3}\label{robsim_8h_ad066d2f092a3d1bb49aca1f9524c66c3}} 
+\index{robsim.\+h@{robsim.\+h}!M\+S\+G\+\_\+\+C\+A\+M\+E\+RA@{M\+S\+G\+\_\+\+C\+A\+M\+E\+RA}}
+\index{M\+S\+G\+\_\+\+C\+A\+M\+E\+RA@{M\+S\+G\+\_\+\+C\+A\+M\+E\+RA}!robsim.\+h@{robsim.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+G\+\_\+\+C\+A\+M\+E\+RA}{MSG\_CAMERA}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+C\+A\+M\+E\+RA~\hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2baddf0d6b21537d984fea6544f58101fa8}{Message\+::\+Type\+::\+C\+A\+M\+E\+RA}}
+
+
+
+Definition at line 16 of file robsim.\+h.
+
+\mbox{\Hypertarget{robsim_8h_a6a7d0aa2f8672b5fd4207bf9a4d2912d}\label{robsim_8h_a6a7d0aa2f8672b5fd4207bf9a4d2912d}} 
+\index{robsim.\+h@{robsim.\+h}!M\+S\+G\+\_\+\+T\+E\+L\+E\+M\+E\+T\+RY@{M\+S\+G\+\_\+\+T\+E\+L\+E\+M\+E\+T\+RY}}
+\index{M\+S\+G\+\_\+\+T\+E\+L\+E\+M\+E\+T\+RY@{M\+S\+G\+\_\+\+T\+E\+L\+E\+M\+E\+T\+RY}!robsim.\+h@{robsim.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+G\+\_\+\+T\+E\+L\+E\+M\+E\+T\+RY}{MSG\_TELEMETRY}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+T\+E\+L\+E\+M\+E\+T\+RY~\hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2babb3d2d909c73fe49800949a344775f8b}{Message\+::\+Type\+::\+T\+E\+L\+E\+M\+E\+T\+RY}}
+
+
+
+Definition at line 14 of file robsim.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{robsim_8h_ae9bdf1cf8a02cfad30e904f75ede4f4e}\label{robsim_8h_ae9bdf1cf8a02cfad30e904f75ede4f4e}} 
+\index{robsim.\+h@{robsim.\+h}!espera\+\_\+siguiente\+\_\+intervalo@{espera\+\_\+siguiente\+\_\+intervalo}}
+\index{espera\+\_\+siguiente\+\_\+intervalo@{espera\+\_\+siguiente\+\_\+intervalo}!robsim.\+h@{robsim.\+h}}
+\subsubsection{\texorpdfstring{espera\+\_\+siguiente\+\_\+intervalo()}{espera\_siguiente\_intervalo()}}
+{\footnotesize\ttfamily void espera\+\_\+siguiente\+\_\+intervalo (\begin{DoxyParamCaption}\item[{struct timeval $\ast$}]{t0,  }\item[{int}]{n,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Función bloqueante que espera hasta el siguiente intervalor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $\ast$t0} & puntero a timeval con el tiempo incial del experimento \\
+\hline
+\mbox{\tt in}  & {\em n} & numero de intervalo \\
+\hline
+\mbox{\tt in}  & {\em dt} & paso de tiempo \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file robsim.\+cpp.
+
+\mbox{\Hypertarget{robsim_8h_abfd055405fc0db9a96a29057436d7e6b}\label{robsim_8h_abfd055405fc0db9a96a29057436d7e6b}} 
+\index{robsim.\+h@{robsim.\+h}!time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms@{time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms}}
+\index{time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms@{time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms}!robsim.\+h@{robsim.\+h}}
+\subsubsection{\texorpdfstring{time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms()}{time\_falt\_next\_interv\_ms()}}
+{\footnotesize\ttfamily int time\+\_\+falt\+\_\+next\+\_\+interv\+\_\+ms (\begin{DoxyParamCaption}\item[{struct timeval $\ast$}]{t0,  }\item[{int}]{n,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Calcula el tiempo faltante para el siguiente intervalo. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em $\ast$t0} & puntero a timeval con el tiempo incial del experimento \\
+\hline
+\mbox{\tt in}  & {\em n} & numero de intervalor \\
+\hline
+\mbox{\tt in}  & {\em dt} & paso de tiempo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tiempo en ms hasta el intervalo n 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file robsim.\+cpp.
+

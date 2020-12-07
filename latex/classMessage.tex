@@ -1,0 +1,165 @@
+\hypertarget{classMessage}{}\section{Message Class Reference}
+\label{classMessage}\index{Message@{Message}}
+
+
+Clase Mensaje.  
+
+
+
+
+{\ttfamily \#include $<$robsim.\+h$>$}
+
+
+
+Inheritance diagram for Message\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classMessage__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2b}{Type} \{ \hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2babb3d2d909c73fe49800949a344775f8b}{Type\+::\+T\+E\+L\+E\+M\+E\+T\+RY}, 
+\hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2bae58a1b00942e66d8b4abc960da7877ab}{Type\+::\+A\+C\+T\+I\+ON}, 
+\hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2baddf0d6b21537d984fea6544f58101fa8}{Type\+::\+C\+A\+M\+E\+RA}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2b}{Type} \hyperlink{classMessage_a2d91ea6e9b207fac52a616c60a5664a8}{get\+Type} () const
+\item 
+void \hyperlink{classMessage_acaa0b0c246dfbdd5c929911b27752b5c}{set\+Type} (\hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2b}{Type} t)
+\item 
+void \hyperlink{classMessage_a861344493c976ef1de90df8b464f36af}{send\+\_\+msg} (std\+::queue$<$ std\+::string $>$ \&\hyperlink{main_8cpp_ab9c1ea4772f1bf8606c9c03d8fde8004}{q})
+\item 
+void \hyperlink{classMessage_a9da1640bba6e0b0f63752f1927662ada}{write\+\_\+msg} (std\+::string msg\+\_\+)
+\item 
+void \hyperlink{classMessage_accae179a21fb486b5e830edf36f5cffc}{print\+\_\+msg} ()
+\item 
+void \hyperlink{classMessage_a503349764ac9e059395381da69375b5b}{delete\+\_\+msg} (void)
+\item 
+\hyperlink{classMessage_aa42afac737625598fc895414fbb2e332}{Message} (std\+::string msg\+\_\+)
+\item 
+\hyperlink{classMessage_a4fc4f717b634e66070366cb7722d7761}{Message} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase Mensaje. 
+
+Definition at line 139 of file robsim.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2b}\label{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2b}} 
+\index{Message@{Message}!Type@{Type}}
+\index{Type@{Type}!Message@{Message}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2b}{Message\+::\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+E\+L\+E\+M\+E\+T\+RY@{T\+E\+L\+E\+M\+E\+T\+RY}!Message@{Message}}\index{Message@{Message}!T\+E\+L\+E\+M\+E\+T\+RY@{T\+E\+L\+E\+M\+E\+T\+RY}}}\mbox{\Hypertarget{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2babb3d2d909c73fe49800949a344775f8b}\label{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2babb3d2d909c73fe49800949a344775f8b}} 
+T\+E\+L\+E\+M\+E\+T\+RY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+C\+T\+I\+ON@{A\+C\+T\+I\+ON}!Message@{Message}}\index{Message@{Message}!A\+C\+T\+I\+ON@{A\+C\+T\+I\+ON}}}\mbox{\Hypertarget{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2bae58a1b00942e66d8b4abc960da7877ab}\label{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2bae58a1b00942e66d8b4abc960da7877ab}} 
+A\+C\+T\+I\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+A\+M\+E\+RA@{C\+A\+M\+E\+RA}!Message@{Message}}\index{Message@{Message}!C\+A\+M\+E\+RA@{C\+A\+M\+E\+RA}}}\mbox{\Hypertarget{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2baddf0d6b21537d984fea6544f58101fa8}\label{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2baddf0d6b21537d984fea6544f58101fa8}} 
+C\+A\+M\+E\+RA&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 141 of file robsim.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMessage_aa42afac737625598fc895414fbb2e332}\label{classMessage_aa42afac737625598fc895414fbb2e332}} 
+\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection{\texorpdfstring{Message()}{Message()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Message\+::\+Message (\begin{DoxyParamCaption}\item[{std\+::string}]{msg\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMessage_a4fc4f717b634e66070366cb7722d7761}\label{classMessage_a4fc4f717b634e66070366cb7722d7761}} 
+\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection{\texorpdfstring{Message()}{Message()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Message\+::\+Message (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file robsim.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMessage_a503349764ac9e059395381da69375b5b}\label{classMessage_a503349764ac9e059395381da69375b5b}} 
+\index{Message@{Message}!delete\+\_\+msg@{delete\+\_\+msg}}
+\index{delete\+\_\+msg@{delete\+\_\+msg}!Message@{Message}}
+\subsubsection{\texorpdfstring{delete\+\_\+msg()}{delete\_msg()}}
+{\footnotesize\ttfamily void Message\+::delete\+\_\+msg (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 85 of file robsim.\+cpp.
+
+\mbox{\Hypertarget{classMessage_a2d91ea6e9b207fac52a616c60a5664a8}\label{classMessage_a2d91ea6e9b207fac52a616c60a5664a8}} 
+\index{Message@{Message}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Message@{Message}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily \hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2b}{Type} Message\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMessage_accae179a21fb486b5e830edf36f5cffc}\label{classMessage_accae179a21fb486b5e830edf36f5cffc}} 
+\index{Message@{Message}!print\+\_\+msg@{print\+\_\+msg}}
+\index{print\+\_\+msg@{print\+\_\+msg}!Message@{Message}}
+\subsubsection{\texorpdfstring{print\+\_\+msg()}{print\_msg()}}
+{\footnotesize\ttfamily void Message\+::print\+\_\+msg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file robsim.\+cpp.
+
+\mbox{\Hypertarget{classMessage_a861344493c976ef1de90df8b464f36af}\label{classMessage_a861344493c976ef1de90df8b464f36af}} 
+\index{Message@{Message}!send\+\_\+msg@{send\+\_\+msg}}
+\index{send\+\_\+msg@{send\+\_\+msg}!Message@{Message}}
+\subsubsection{\texorpdfstring{send\+\_\+msg()}{send\_msg()}}
+{\footnotesize\ttfamily void Message\+::send\+\_\+msg (\begin{DoxyParamCaption}\item[{std\+::queue$<$ std\+::string $>$ \&}]{q }\end{DoxyParamCaption})}
+
+
+
+Definition at line 53 of file robsim.\+cpp.
+
+\mbox{\Hypertarget{classMessage_acaa0b0c246dfbdd5c929911b27752b5c}\label{classMessage_acaa0b0c246dfbdd5c929911b27752b5c}} 
+\index{Message@{Message}!set\+Type@{set\+Type}}
+\index{set\+Type@{set\+Type}!Message@{Message}}
+\subsubsection{\texorpdfstring{set\+Type()}{setType()}}
+{\footnotesize\ttfamily void Message\+::set\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{classMessage_a1c65ab3f02ba5b175f583f9d275ecf2b}{Type}}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 143 of file robsim.\+h.
+
+\mbox{\Hypertarget{classMessage_a9da1640bba6e0b0f63752f1927662ada}\label{classMessage_a9da1640bba6e0b0f63752f1927662ada}} 
+\index{Message@{Message}!write\+\_\+msg@{write\+\_\+msg}}
+\index{write\+\_\+msg@{write\+\_\+msg}!Message@{Message}}
+\subsubsection{\texorpdfstring{write\+\_\+msg()}{write\_msg()}}
+{\footnotesize\ttfamily void Message\+::write\+\_\+msg (\begin{DoxyParamCaption}\item[{std\+::string}]{msg\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 89 of file robsim.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{robsim_8h}{robsim.\+h}\item 
+src/\hyperlink{robsim_8cpp}{robsim.\+cpp}\end{DoxyCompactItemize}

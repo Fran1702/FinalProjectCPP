@@ -1,0 +1,165 @@
+\hypertarget{classTimer}{}\section{Timer Class Reference}
+\label{classTimer}\index{Timer@{Timer}}
+
+
+Create asynchronous timers which execute specified functions in set time interval.  
+
+
+
+
+{\ttfamily \#include $<$timer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTimer_a5f16e8da27d2a5a5242dead46de05d97}{Timer} ()
+\item 
+\hyperlink{classTimer_a6e5fa1d67967d471f368218e1d0ae807}{Timer} (std\+::function$<$ void(void)$>$ func, const long \&interval)
+\item 
+void \hyperlink{classTimer_a3a8b5272198d029779dc9302a54305a8}{start} ()
+\begin{DoxyCompactList}\small\item\em Starting the timer. \end{DoxyCompactList}\item 
+void \hyperlink{classTimer_a63f0eb44b27402196590a03781515dba}{stop} ()
+\item 
+void \hyperlink{classTimer_aa3f7871196bb56202af2bc982bfbfff6}{restart} ()
+\item 
+bool \hyperlink{classTimer_a2ef50bfc604ea9fb88d3000c9ad0edd9}{is\+Running} ()
+\item 
+\hyperlink{classTimer}{Timer} $\ast$ \hyperlink{classTimer_a70653847aa7ae39d66379597e37db6af}{set\+Func} (std\+::function$<$ void(void)$>$ func)
+\item 
+long \hyperlink{classTimer_a0da8462797c35f5a91e7246eeed32198}{get\+Interval} ()
+\item 
+\hyperlink{classTimer}{Timer} $\ast$ \hyperlink{classTimer_abdc4f70c2dc58ee37b62861c842b77f0}{set\+Interval} (const long \&interval)
+\item 
+\hyperlink{classTimer_a14fa469c4c295c5fa6e66a4ad1092146}{$\sim$\+Timer} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Create asynchronous timers which execute specified functions in set time interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & Function which sould be executed \\
+\hline
+{\em interval} & Interval of time in which function will be executed (in milliseconds) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file timer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTimer_a5f16e8da27d2a5a5242dead46de05d97}\label{classTimer_a5f16e8da27d2a5a5242dead46de05d97}} 
+\index{Timer@{Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{Timer()}{Timer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Timer\+::\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 25 of file timer.\+h.
+
+\mbox{\Hypertarget{classTimer_a6e5fa1d67967d471f368218e1d0ae807}\label{classTimer_a6e5fa1d67967d471f368218e1d0ae807}} 
+\index{Timer@{Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{Timer()}{Timer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Timer\+::\+Timer (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(void)$>$}]{func,  }\item[{const long \&}]{interval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 27 of file timer.\+h.
+
+\mbox{\Hypertarget{classTimer_a14fa469c4c295c5fa6e66a4ad1092146}\label{classTimer_a14fa469c4c295c5fa6e66a4ad1092146}} 
+\index{Timer@{Timer}!````~Timer@{$\sim$\+Timer}}
+\index{````~Timer@{$\sim$\+Timer}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{$\sim$\+Timer()}{~Timer()}}
+{\footnotesize\ttfamily Timer\+::$\sim$\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 108 of file timer.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTimer_a0da8462797c35f5a91e7246eeed32198}\label{classTimer_a0da8462797c35f5a91e7246eeed32198}} 
+\index{Timer@{Timer}!get\+Interval@{get\+Interval}}
+\index{get\+Interval@{get\+Interval}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{get\+Interval()}{getInterval()}}
+{\footnotesize\ttfamily long Timer\+::get\+Interval (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 91 of file timer.\+h.
+
+\mbox{\Hypertarget{classTimer_a2ef50bfc604ea9fb88d3000c9ad0edd9}\label{classTimer_a2ef50bfc604ea9fb88d3000c9ad0edd9}} 
+\index{Timer@{Timer}!is\+Running@{is\+Running}}
+\index{is\+Running@{is\+Running}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{is\+Running()}{isRunning()}}
+{\footnotesize\ttfamily bool Timer\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 69 of file timer.\+h.
+
+\mbox{\Hypertarget{classTimer_aa3f7871196bb56202af2bc982bfbfff6}\label{classTimer_aa3f7871196bb56202af2bc982bfbfff6}} 
+\index{Timer@{Timer}!restart@{restart}}
+\index{restart@{restart}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void Timer\+::restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file timer.\+h.
+
+\mbox{\Hypertarget{classTimer_a70653847aa7ae39d66379597e37db6af}\label{classTimer_a70653847aa7ae39d66379597e37db6af}} 
+\index{Timer@{Timer}!set\+Func@{set\+Func}}
+\index{set\+Func@{set\+Func}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{set\+Func()}{setFunc()}}
+{\footnotesize\ttfamily \hyperlink{classTimer}{Timer}$\ast$ Timer\+::set\+Func (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(void)$>$}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 81 of file timer.\+h.
+
+\mbox{\Hypertarget{classTimer_abdc4f70c2dc58ee37b62861c842b77f0}\label{classTimer_abdc4f70c2dc58ee37b62861c842b77f0}} 
+\index{Timer@{Timer}!set\+Interval@{set\+Interval}}
+\index{set\+Interval@{set\+Interval}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{set\+Interval()}{setInterval()}}
+{\footnotesize\ttfamily \hyperlink{classTimer}{Timer}$\ast$ Timer\+::set\+Interval (\begin{DoxyParamCaption}\item[{const long \&}]{interval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 103 of file timer.\+h.
+
+\mbox{\Hypertarget{classTimer_a3a8b5272198d029779dc9302a54305a8}\label{classTimer_a3a8b5272198d029779dc9302a54305a8}} 
+\index{Timer@{Timer}!start@{start}}
+\index{start@{start}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Timer\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Starting the timer. 
+
+
+
+Definition at line 35 of file timer.\+h.
+
+\mbox{\Hypertarget{classTimer_a63f0eb44b27402196590a03781515dba}\label{classTimer_a63f0eb44b27402196590a03781515dba}} 
+\index{Timer@{Timer}!stop@{stop}}
+\index{stop@{stop}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Timer\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 50 of file timer.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{timer_8h}{timer.\+h}\end{DoxyCompactItemize}

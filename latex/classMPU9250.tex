@@ -1,0 +1,607 @@
+\hypertarget{classMPU9250}{}\section{M\+P\+U9250 Class Reference}
+\label{classMPU9250}\index{M\+P\+U9250@{M\+P\+U9250}}
+
+
+{\ttfamily \#include $<$sensors.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMPU9250_ab6b113da9b2fb006eb44dc8078e699c5}{get\+Mres} ()
+\item 
+void \hyperlink{classMPU9250_afd804ec9bd68961fc0084af461104304}{get\+Gres} ()
+\item 
+void \hyperlink{classMPU9250_a1c7dba3645913bf97f8b47d2bd4af2b0}{get\+Ares} ()
+\item 
+void \hyperlink{classMPU9250_a66dc74fdb59049f61e1e86e4b71aabac}{read\+Accel\+Data} (int16\+\_\+t $\ast$, vector$<$ vector$<$ double $>$$>$, int)
+\item 
+void \hyperlink{classMPU9250_a7f0f6be23ed65146391cf91e4739ccc0}{read\+Gyro\+Data} (int16\+\_\+t $\ast$)
+\item 
+void \hyperlink{classMPU9250_a5d3589bd83a003da56546474dd9ca519}{read\+Mag\+Data} (int16\+\_\+t $\ast$)
+\item 
+int16\+\_\+t \hyperlink{classMPU9250_a3ab318a519e0f85a38d0e40d4bedc89f}{read\+Temp\+Data} ()
+\item 
+void \hyperlink{classMPU9250_a39e17cffe3de219d3f991b6476833e40}{update\+Time} ()
+\item 
+void \hyperlink{classMPU9250_aab7b6d912fdc88c4fedfad90abe2aeab}{init\+A\+K8963} (float $\ast$)
+\item 
+void \hyperlink{classMPU9250_a03803202142ac461867daa9dd06fdd80}{init\+M\+P\+U9250} ()
+\item 
+void \hyperlink{classMPU9250_aeac1ae4402a4eb9a74bea5ad8af929c1}{calibrate\+M\+P\+U9250} (float $\ast$\hyperlink{classMPU9250_a4fc2232b3fdbd61bc1024c86842ddf9a}{gyro\+Bias}, float $\ast$\hyperlink{classMPU9250_a7b0e6389baccd5592c95cae9d24d1317}{accel\+Bias})
+\item 
+void \hyperlink{classMPU9250_ad3bbdef687191a70354ee2f900352993}{M\+P\+U9250\+Self\+Test} (float $\ast$destination)
+\item 
+void \hyperlink{classMPU9250_ad2ebbfb1d321b9c3312f4ae298214020}{mag\+Cal\+M\+P\+U9250} (float $\ast$dest1, float $\ast$dest2)
+\item 
+uint8\+\_\+t \hyperlink{classMPU9250_a136cd20820be776769c6214640c4130e}{write\+Byte} (uint8\+\_\+t, uint8\+\_\+t, uint8\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{classMPU9250_a846032e6a6d737f4ff62065ca0e1568f}{read\+Byte} (uint8\+\_\+t, uint8\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{classMPU9250_a083e837c203b46e9af4a5900b731770f}{read\+Bytes} (uint8\+\_\+t, uint8\+\_\+t, uint8\+\_\+t, uint8\+\_\+t $\ast$)
+\item 
+uint8\+\_\+t \hyperlink{classMPU9250_a9845d64636a0c0eb1a3ba99eb44ebdd4}{read\+Bytes\+S\+PI} (uint8\+\_\+t, uint8\+\_\+t, uint8\+\_\+t $\ast$)
+\item 
+uint8\+\_\+t \hyperlink{classMPU9250_a79ec9d87d525be62139a4d31d0538ba3}{read\+Bytes\+Wire} (uint8\+\_\+t, uint8\+\_\+t, uint8\+\_\+t, uint8\+\_\+t $\ast$)
+\item 
+bool \hyperlink{classMPU9250_a59e39b2fef2bdb29197bcbd765ec5bae}{begin} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classMPU9250_ab3d0117a094b81ac2e07f5c2d68aa5f4}{pitch}
+\item 
+float \hyperlink{classMPU9250_a0493fbbf09cb14b8695a1eb804136e34}{yaw}
+\item 
+float \hyperlink{classMPU9250_ad394d6659aa446adff547feaa4985f94}{roll}
+\item 
+float \hyperlink{classMPU9250_a2190394242c2b74ff53c20f8180af287}{temperature}
+\item 
+int16\+\_\+t \hyperlink{classMPU9250_a8fa1b4fa4bc8db4bd162bc4f8ee8f0ea}{temp\+Count}
+\item 
+uint32\+\_\+t \hyperlink{classMPU9250_a4d6b6338685120de2e21aa30d9d89389}{delt\+\_\+t} = 0
+\item 
+uint32\+\_\+t \hyperlink{classMPU9250_a9d231520d019ba7879c60ef7b72707a5}{count} = 0
+\item 
+uint32\+\_\+t \hyperlink{classMPU9250_a604d036ab632885152ab770b3c64676a}{sum\+Count} = 0
+\item 
+float \hyperlink{classMPU9250_a1e53d31ab289b64a0d6393b17e8b807e}{deltat} = 0.\+0f
+\item 
+float \hyperlink{classMPU9250_ac40db4e2fb94e9b33ec0b821c0b6ed2d}{sum} = 0.\+0f
+\item 
+uint32\+\_\+t \hyperlink{classMPU9250_af60ee039dadb9eb5f4ade404ddfd878b}{last\+Update} = 0
+\item 
+uint32\+\_\+t \hyperlink{classMPU9250_a4ea2c930abf4529a3888885f9d928cf4}{first\+Update} = 0
+\item 
+uint32\+\_\+t \hyperlink{classMPU9250_a96b7d70d685ed53744c69acc9f7ef1af}{Now} = 0
+\item 
+int16\+\_\+t \hyperlink{classMPU9250_a14ab2e2ab741ca245007cb9a134e07f3}{gyro\+Count} \mbox{[}3\mbox{]}
+\item 
+int16\+\_\+t \hyperlink{classMPU9250_aff92db5334c43a72f5c2f1fc8ee6f596}{mag\+Count} \mbox{[}3\mbox{]}
+\item 
+float \hyperlink{classMPU9250_afa89af2772cead0f76a4ddd92ec5f6a8}{a\+Res}
+\item 
+float \hyperlink{classMPU9250_a2c137b20138d3c80c4828691d5656d92}{g\+Res}
+\item 
+float \hyperlink{classMPU9250_a173e0594b9d3ecb6ece2b71f9f59fc50}{m\+Res}
+\item 
+float \hyperlink{classMPU9250_aea8a7622821bf8aca55fcef71d91e29f}{ax}
+\item 
+float \hyperlink{classMPU9250_a5129e95dbe12544fa34cc53b5644ff71}{ay}
+\item 
+float \hyperlink{classMPU9250_a8ab7a335476e40a26aba80f867ac7da9}{az}
+\item 
+float \hyperlink{classMPU9250_a59b6d7bd37738bac258da24ad330feef}{gx}
+\item 
+float \hyperlink{classMPU9250_a126311c382d2667b7bc7cbe1f9b38b51}{gy}
+\item 
+float \hyperlink{classMPU9250_a756658ca06a3807ef426ab87022a15c9}{gz}
+\item 
+float \hyperlink{classMPU9250_aa4cc8b2c9417304d1106bdbd988ac607}{mx}
+\item 
+float \hyperlink{classMPU9250_ad7cf9fe3134d24f46705881b2e002f31}{my}
+\item 
+float \hyperlink{classMPU9250_af11072922aa71ffb125fe3786f848653}{mz}
+\item 
+float \hyperlink{classMPU9250_a30d462461868e4f306c2f47d1adbd1d2}{factory\+Mag\+Calibration} \mbox{[}3\mbox{]} = \{0, 0, 0\}
+\item 
+float \hyperlink{classMPU9250_af34938d098b83ec910bee1b51a41972f}{factory\+Mag\+Bias} \mbox{[}3\mbox{]} = \{0, 0, 0\}
+\item 
+float \hyperlink{classMPU9250_a4fc2232b3fdbd61bc1024c86842ddf9a}{gyro\+Bias} \mbox{[}3\mbox{]} = \{0, 0, 0\}
+\item 
+float \hyperlink{classMPU9250_a7b0e6389baccd5592c95cae9d24d1317}{accel\+Bias} \mbox{[}3\mbox{]} = \{0, 0, 0\}
+\item 
+float \hyperlink{classMPU9250_a1f3b364d6efca22837dd944c60effce5}{mag\+Bias} \mbox{[}3\mbox{]} = \{0, 0, 0\}
+\item 
+float \hyperlink{classMPU9250_a09f641aa48a5c7228a6ea5034e0391c3}{mag\+Scale} \mbox{[}3\mbox{]} = \{0, 0, 0\}
+\item 
+float \hyperlink{classMPU9250_afd15093e18fc34ce15e526f464fc557a}{self\+Test} \mbox{[}6\mbox{]}
+\item 
+int16\+\_\+t \hyperlink{classMPU9250_adb56df6ceaf1dc204f97270540ac8b14}{accel\+Count} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file sensors.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMPU9250_a59e39b2fef2bdb29197bcbd765ec5bae}\label{classMPU9250_a59e39b2fef2bdb29197bcbd765ec5bae}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!begin@{begin}}
+\index{begin@{begin}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily bool M\+P\+U9250\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_aeac1ae4402a4eb9a74bea5ad8af929c1}\label{classMPU9250_aeac1ae4402a4eb9a74bea5ad8af929c1}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!calibrate\+M\+P\+U9250@{calibrate\+M\+P\+U9250}}
+\index{calibrate\+M\+P\+U9250@{calibrate\+M\+P\+U9250}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{calibrate\+M\+P\+U9250()}{calibrateMPU9250()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::calibrate\+M\+P\+U9250 (\begin{DoxyParamCaption}\item[{float $\ast$}]{gyro\+Bias,  }\item[{float $\ast$}]{accel\+Bias }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_a1c7dba3645913bf97f8b47d2bd4af2b0}\label{classMPU9250_a1c7dba3645913bf97f8b47d2bd4af2b0}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!get\+Ares@{get\+Ares}}
+\index{get\+Ares@{get\+Ares}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{get\+Ares()}{getAres()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::get\+Ares (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_afd804ec9bd68961fc0084af461104304}\label{classMPU9250_afd804ec9bd68961fc0084af461104304}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!get\+Gres@{get\+Gres}}
+\index{get\+Gres@{get\+Gres}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{get\+Gres()}{getGres()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::get\+Gres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_ab6b113da9b2fb006eb44dc8078e699c5}\label{classMPU9250_ab6b113da9b2fb006eb44dc8078e699c5}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!get\+Mres@{get\+Mres}}
+\index{get\+Mres@{get\+Mres}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{get\+Mres()}{getMres()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::get\+Mres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_aab7b6d912fdc88c4fedfad90abe2aeab}\label{classMPU9250_aab7b6d912fdc88c4fedfad90abe2aeab}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!init\+A\+K8963@{init\+A\+K8963}}
+\index{init\+A\+K8963@{init\+A\+K8963}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{init\+A\+K8963()}{initAK8963()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::init\+A\+K8963 (\begin{DoxyParamCaption}\item[{float $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_a03803202142ac461867daa9dd06fdd80}\label{classMPU9250_a03803202142ac461867daa9dd06fdd80}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!init\+M\+P\+U9250@{init\+M\+P\+U9250}}
+\index{init\+M\+P\+U9250@{init\+M\+P\+U9250}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{init\+M\+P\+U9250()}{initMPU9250()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::init\+M\+P\+U9250 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_ad2ebbfb1d321b9c3312f4ae298214020}\label{classMPU9250_ad2ebbfb1d321b9c3312f4ae298214020}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!mag\+Cal\+M\+P\+U9250@{mag\+Cal\+M\+P\+U9250}}
+\index{mag\+Cal\+M\+P\+U9250@{mag\+Cal\+M\+P\+U9250}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{mag\+Cal\+M\+P\+U9250()}{magCalMPU9250()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::mag\+Cal\+M\+P\+U9250 (\begin{DoxyParamCaption}\item[{float $\ast$}]{dest1,  }\item[{float $\ast$}]{dest2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_ad3bbdef687191a70354ee2f900352993}\label{classMPU9250_ad3bbdef687191a70354ee2f900352993}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!M\+P\+U9250\+Self\+Test@{M\+P\+U9250\+Self\+Test}}
+\index{M\+P\+U9250\+Self\+Test@{M\+P\+U9250\+Self\+Test}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{M\+P\+U9250\+Self\+Test()}{MPU9250SelfTest()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::\+M\+P\+U9250\+Self\+Test (\begin{DoxyParamCaption}\item[{float $\ast$}]{destination }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_a66dc74fdb59049f61e1e86e4b71aabac}\label{classMPU9250_a66dc74fdb59049f61e1e86e4b71aabac}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!read\+Accel\+Data@{read\+Accel\+Data}}
+\index{read\+Accel\+Data@{read\+Accel\+Data}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{read\+Accel\+Data()}{readAccelData()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::read\+Accel\+Data (\begin{DoxyParamCaption}\item[{int16\+\_\+t $\ast$}]{destination,  }\item[{vector$<$ vector$<$ double $>$$>$}]{data,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file sensors.\+cpp.
+
+\mbox{\Hypertarget{classMPU9250_a846032e6a6d737f4ff62065ca0e1568f}\label{classMPU9250_a846032e6a6d737f4ff62065ca0e1568f}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!read\+Byte@{read\+Byte}}
+\index{read\+Byte@{read\+Byte}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{read\+Byte()}{readByte()}}
+{\footnotesize\ttfamily uint8\+\_\+t M\+P\+U9250\+::read\+Byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{,  }\item[{uint8\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_a083e837c203b46e9af4a5900b731770f}\label{classMPU9250_a083e837c203b46e9af4a5900b731770f}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!read\+Bytes@{read\+Bytes}}
+\index{read\+Bytes@{read\+Bytes}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{read\+Bytes()}{readBytes()}}
+{\footnotesize\ttfamily uint8\+\_\+t M\+P\+U9250\+::read\+Bytes (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{,  }\item[{uint8\+\_\+t}]{,  }\item[{uint8\+\_\+t}]{,  }\item[{uint8\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_a9845d64636a0c0eb1a3ba99eb44ebdd4}\label{classMPU9250_a9845d64636a0c0eb1a3ba99eb44ebdd4}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!read\+Bytes\+S\+PI@{read\+Bytes\+S\+PI}}
+\index{read\+Bytes\+S\+PI@{read\+Bytes\+S\+PI}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{read\+Bytes\+S\+P\+I()}{readBytesSPI()}}
+{\footnotesize\ttfamily uint8\+\_\+t M\+P\+U9250\+::read\+Bytes\+S\+PI (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{,  }\item[{uint8\+\_\+t}]{,  }\item[{uint8\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_a79ec9d87d525be62139a4d31d0538ba3}\label{classMPU9250_a79ec9d87d525be62139a4d31d0538ba3}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!read\+Bytes\+Wire@{read\+Bytes\+Wire}}
+\index{read\+Bytes\+Wire@{read\+Bytes\+Wire}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{read\+Bytes\+Wire()}{readBytesWire()}}
+{\footnotesize\ttfamily uint8\+\_\+t M\+P\+U9250\+::read\+Bytes\+Wire (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{,  }\item[{uint8\+\_\+t}]{,  }\item[{uint8\+\_\+t}]{,  }\item[{uint8\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_a7f0f6be23ed65146391cf91e4739ccc0}\label{classMPU9250_a7f0f6be23ed65146391cf91e4739ccc0}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!read\+Gyro\+Data@{read\+Gyro\+Data}}
+\index{read\+Gyro\+Data@{read\+Gyro\+Data}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{read\+Gyro\+Data()}{readGyroData()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::read\+Gyro\+Data (\begin{DoxyParamCaption}\item[{int16\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_a5d3589bd83a003da56546474dd9ca519}\label{classMPU9250_a5d3589bd83a003da56546474dd9ca519}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!read\+Mag\+Data@{read\+Mag\+Data}}
+\index{read\+Mag\+Data@{read\+Mag\+Data}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{read\+Mag\+Data()}{readMagData()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::read\+Mag\+Data (\begin{DoxyParamCaption}\item[{int16\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_a3ab318a519e0f85a38d0e40d4bedc89f}\label{classMPU9250_a3ab318a519e0f85a38d0e40d4bedc89f}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!read\+Temp\+Data@{read\+Temp\+Data}}
+\index{read\+Temp\+Data@{read\+Temp\+Data}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{read\+Temp\+Data()}{readTempData()}}
+{\footnotesize\ttfamily int16\+\_\+t M\+P\+U9250\+::read\+Temp\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_a39e17cffe3de219d3f991b6476833e40}\label{classMPU9250_a39e17cffe3de219d3f991b6476833e40}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!update\+Time@{update\+Time}}
+\index{update\+Time@{update\+Time}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{update\+Time()}{updateTime()}}
+{\footnotesize\ttfamily void M\+P\+U9250\+::update\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMPU9250_a136cd20820be776769c6214640c4130e}\label{classMPU9250_a136cd20820be776769c6214640c4130e}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!write\+Byte@{write\+Byte}}
+\index{write\+Byte@{write\+Byte}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{write\+Byte()}{writeByte()}}
+{\footnotesize\ttfamily uint8\+\_\+t M\+P\+U9250\+::write\+Byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{,  }\item[{uint8\+\_\+t}]{,  }\item[{uint8\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMPU9250_a7b0e6389baccd5592c95cae9d24d1317}\label{classMPU9250_a7b0e6389baccd5592c95cae9d24d1317}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!accel\+Bias@{accel\+Bias}}
+\index{accel\+Bias@{accel\+Bias}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{accel\+Bias}{accelBias}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::accel\+Bias\mbox{[}3\mbox{]} = \{0, 0, 0\}}
+
+
+
+Definition at line 31 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_adb56df6ceaf1dc204f97270540ac8b14}\label{classMPU9250_adb56df6ceaf1dc204f97270540ac8b14}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!accel\+Count@{accel\+Count}}
+\index{accel\+Count@{accel\+Count}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{accel\+Count}{accelCount}}
+{\footnotesize\ttfamily int16\+\_\+t M\+P\+U9250\+::accel\+Count\mbox{[}3\mbox{]}}
+
+
+
+Definition at line 36 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_afa89af2772cead0f76a4ddd92ec5f6a8}\label{classMPU9250_afa89af2772cead0f76a4ddd92ec5f6a8}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!a\+Res@{a\+Res}}
+\index{a\+Res@{a\+Res}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{a\+Res}{aRes}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::a\+Res}
+
+
+
+Definition at line 24 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_aea8a7622821bf8aca55fcef71d91e29f}\label{classMPU9250_aea8a7622821bf8aca55fcef71d91e29f}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!ax@{ax}}
+\index{ax@{ax}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{ax}{ax}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::ax}
+
+
+
+Definition at line 26 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a5129e95dbe12544fa34cc53b5644ff71}\label{classMPU9250_a5129e95dbe12544fa34cc53b5644ff71}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!ay@{ay}}
+\index{ay@{ay}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{ay}{ay}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::ay}
+
+
+
+Definition at line 26 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a8ab7a335476e40a26aba80f867ac7da9}\label{classMPU9250_a8ab7a335476e40a26aba80f867ac7da9}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!az@{az}}
+\index{az@{az}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{az}{az}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::az}
+
+
+
+Definition at line 26 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a9d231520d019ba7879c60ef7b72707a5}\label{classMPU9250_a9d231520d019ba7879c60ef7b72707a5}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!count@{count}}
+\index{count@{count}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily uint32\+\_\+t M\+P\+U9250\+::count = 0}
+
+
+
+Definition at line 16 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a4d6b6338685120de2e21aa30d9d89389}\label{classMPU9250_a4d6b6338685120de2e21aa30d9d89389}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!delt\+\_\+t@{delt\+\_\+t}}
+\index{delt\+\_\+t@{delt\+\_\+t}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{delt\+\_\+t}{delt\_t}}
+{\footnotesize\ttfamily uint32\+\_\+t M\+P\+U9250\+::delt\+\_\+t = 0}
+
+
+
+Definition at line 14 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a1e53d31ab289b64a0d6393b17e8b807e}\label{classMPU9250_a1e53d31ab289b64a0d6393b17e8b807e}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!deltat@{deltat}}
+\index{deltat@{deltat}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{deltat}{deltat}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::deltat = 0.\+0f}
+
+
+
+Definition at line 17 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_af34938d098b83ec910bee1b51a41972f}\label{classMPU9250_af34938d098b83ec910bee1b51a41972f}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!factory\+Mag\+Bias@{factory\+Mag\+Bias}}
+\index{factory\+Mag\+Bias@{factory\+Mag\+Bias}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{factory\+Mag\+Bias}{factoryMagBias}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::factory\+Mag\+Bias\mbox{[}3\mbox{]} = \{0, 0, 0\}}
+
+
+
+Definition at line 28 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a30d462461868e4f306c2f47d1adbd1d2}\label{classMPU9250_a30d462461868e4f306c2f47d1adbd1d2}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!factory\+Mag\+Calibration@{factory\+Mag\+Calibration}}
+\index{factory\+Mag\+Calibration@{factory\+Mag\+Calibration}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{factory\+Mag\+Calibration}{factoryMagCalibration}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::factory\+Mag\+Calibration\mbox{[}3\mbox{]} = \{0, 0, 0\}}
+
+
+
+Definition at line 28 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a4ea2c930abf4529a3888885f9d928cf4}\label{classMPU9250_a4ea2c930abf4529a3888885f9d928cf4}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!first\+Update@{first\+Update}}
+\index{first\+Update@{first\+Update}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{first\+Update}{firstUpdate}}
+{\footnotesize\ttfamily uint32\+\_\+t M\+P\+U9250\+::first\+Update = 0}
+
+
+
+Definition at line 18 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a2c137b20138d3c80c4828691d5656d92}\label{classMPU9250_a2c137b20138d3c80c4828691d5656d92}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!g\+Res@{g\+Res}}
+\index{g\+Res@{g\+Res}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{g\+Res}{gRes}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::g\+Res}
+
+
+
+Definition at line 24 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a59b6d7bd37738bac258da24ad330feef}\label{classMPU9250_a59b6d7bd37738bac258da24ad330feef}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!gx@{gx}}
+\index{gx@{gx}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{gx}{gx}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::gx}
+
+
+
+Definition at line 26 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a126311c382d2667b7bc7cbe1f9b38b51}\label{classMPU9250_a126311c382d2667b7bc7cbe1f9b38b51}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!gy@{gy}}
+\index{gy@{gy}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{gy}{gy}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::gy}
+
+
+
+Definition at line 26 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a4fc2232b3fdbd61bc1024c86842ddf9a}\label{classMPU9250_a4fc2232b3fdbd61bc1024c86842ddf9a}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!gyro\+Bias@{gyro\+Bias}}
+\index{gyro\+Bias@{gyro\+Bias}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{gyro\+Bias}{gyroBias}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::gyro\+Bias\mbox{[}3\mbox{]} = \{0, 0, 0\}}
+
+
+
+Definition at line 30 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a14ab2e2ab741ca245007cb9a134e07f3}\label{classMPU9250_a14ab2e2ab741ca245007cb9a134e07f3}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!gyro\+Count@{gyro\+Count}}
+\index{gyro\+Count@{gyro\+Count}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{gyro\+Count}{gyroCount}}
+{\footnotesize\ttfamily int16\+\_\+t M\+P\+U9250\+::gyro\+Count\mbox{[}3\mbox{]}}
+
+
+
+Definition at line 21 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a756658ca06a3807ef426ab87022a15c9}\label{classMPU9250_a756658ca06a3807ef426ab87022a15c9}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!gz@{gz}}
+\index{gz@{gz}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{gz}{gz}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::gz}
+
+
+
+Definition at line 26 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_af60ee039dadb9eb5f4ade404ddfd878b}\label{classMPU9250_af60ee039dadb9eb5f4ade404ddfd878b}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!last\+Update@{last\+Update}}
+\index{last\+Update@{last\+Update}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{last\+Update}{lastUpdate}}
+{\footnotesize\ttfamily uint32\+\_\+t M\+P\+U9250\+::last\+Update = 0}
+
+
+
+Definition at line 18 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a1f3b364d6efca22837dd944c60effce5}\label{classMPU9250_a1f3b364d6efca22837dd944c60effce5}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!mag\+Bias@{mag\+Bias}}
+\index{mag\+Bias@{mag\+Bias}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{mag\+Bias}{magBias}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::mag\+Bias\mbox{[}3\mbox{]} = \{0, 0, 0\}}
+
+
+
+Definition at line 32 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_aff92db5334c43a72f5c2f1fc8ee6f596}\label{classMPU9250_aff92db5334c43a72f5c2f1fc8ee6f596}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!mag\+Count@{mag\+Count}}
+\index{mag\+Count@{mag\+Count}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{mag\+Count}{magCount}}
+{\footnotesize\ttfamily int16\+\_\+t M\+P\+U9250\+::mag\+Count\mbox{[}3\mbox{]}}
+
+
+
+Definition at line 22 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a09f641aa48a5c7228a6ea5034e0391c3}\label{classMPU9250_a09f641aa48a5c7228a6ea5034e0391c3}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!mag\+Scale@{mag\+Scale}}
+\index{mag\+Scale@{mag\+Scale}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{mag\+Scale}{magScale}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::mag\+Scale\mbox{[}3\mbox{]} = \{0, 0, 0\}}
+
+
+
+Definition at line 33 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a173e0594b9d3ecb6ece2b71f9f59fc50}\label{classMPU9250_a173e0594b9d3ecb6ece2b71f9f59fc50}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!m\+Res@{m\+Res}}
+\index{m\+Res@{m\+Res}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{m\+Res}{mRes}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::m\+Res}
+
+
+
+Definition at line 24 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_aa4cc8b2c9417304d1106bdbd988ac607}\label{classMPU9250_aa4cc8b2c9417304d1106bdbd988ac607}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!mx@{mx}}
+\index{mx@{mx}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{mx}{mx}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::mx}
+
+
+
+Definition at line 26 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_ad7cf9fe3134d24f46705881b2e002f31}\label{classMPU9250_ad7cf9fe3134d24f46705881b2e002f31}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!my@{my}}
+\index{my@{my}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{my}{my}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::my}
+
+
+
+Definition at line 26 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_af11072922aa71ffb125fe3786f848653}\label{classMPU9250_af11072922aa71ffb125fe3786f848653}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!mz@{mz}}
+\index{mz@{mz}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{mz}{mz}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::mz}
+
+
+
+Definition at line 26 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a96b7d70d685ed53744c69acc9f7ef1af}\label{classMPU9250_a96b7d70d685ed53744c69acc9f7ef1af}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!Now@{Now}}
+\index{Now@{Now}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{Now}{Now}}
+{\footnotesize\ttfamily uint32\+\_\+t M\+P\+U9250\+::\+Now = 0}
+
+
+
+Definition at line 19 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_ab3d0117a094b81ac2e07f5c2d68aa5f4}\label{classMPU9250_ab3d0117a094b81ac2e07f5c2d68aa5f4}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!pitch@{pitch}}
+\index{pitch@{pitch}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{pitch}{pitch}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::pitch}
+
+
+
+Definition at line 11 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_ad394d6659aa446adff547feaa4985f94}\label{classMPU9250_ad394d6659aa446adff547feaa4985f94}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!roll@{roll}}
+\index{roll@{roll}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{roll}{roll}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::roll}
+
+
+
+Definition at line 11 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_afd15093e18fc34ce15e526f464fc557a}\label{classMPU9250_afd15093e18fc34ce15e526f464fc557a}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!self\+Test@{self\+Test}}
+\index{self\+Test@{self\+Test}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{self\+Test}{selfTest}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::self\+Test\mbox{[}6\mbox{]}}
+
+
+
+Definition at line 34 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_ac40db4e2fb94e9b33ec0b821c0b6ed2d}\label{classMPU9250_ac40db4e2fb94e9b33ec0b821c0b6ed2d}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!sum@{sum}}
+\index{sum@{sum}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{sum}{sum}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::sum = 0.\+0f}
+
+
+
+Definition at line 17 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a604d036ab632885152ab770b3c64676a}\label{classMPU9250_a604d036ab632885152ab770b3c64676a}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!sum\+Count@{sum\+Count}}
+\index{sum\+Count@{sum\+Count}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{sum\+Count}{sumCount}}
+{\footnotesize\ttfamily uint32\+\_\+t M\+P\+U9250\+::sum\+Count = 0}
+
+
+
+Definition at line 16 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a8fa1b4fa4bc8db4bd162bc4f8ee8f0ea}\label{classMPU9250_a8fa1b4fa4bc8db4bd162bc4f8ee8f0ea}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!temp\+Count@{temp\+Count}}
+\index{temp\+Count@{temp\+Count}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{temp\+Count}{tempCount}}
+{\footnotesize\ttfamily int16\+\_\+t M\+P\+U9250\+::temp\+Count}
+
+
+
+Definition at line 13 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a2190394242c2b74ff53c20f8180af287}\label{classMPU9250_a2190394242c2b74ff53c20f8180af287}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!temperature@{temperature}}
+\index{temperature@{temperature}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::temperature}
+
+
+
+Definition at line 12 of file sensors.\+h.
+
+\mbox{\Hypertarget{classMPU9250_a0493fbbf09cb14b8695a1eb804136e34}\label{classMPU9250_a0493fbbf09cb14b8695a1eb804136e34}} 
+\index{M\+P\+U9250@{M\+P\+U9250}!yaw@{yaw}}
+\index{yaw@{yaw}!M\+P\+U9250@{M\+P\+U9250}}
+\subsubsection{\texorpdfstring{yaw}{yaw}}
+{\footnotesize\ttfamily float M\+P\+U9250\+::yaw}
+
+
+
+Definition at line 11 of file sensors.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{sensors_8h}{sensors.\+h}\item 
+src/\hyperlink{sensors_8cpp}{sensors.\+cpp}\end{DoxyCompactItemize}

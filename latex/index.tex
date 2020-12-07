@@ -1,0 +1,39 @@
+Esta es la documentación del proyecto final de la catedra de Programación Orientada a Objetos en C++.
+
+\subsection*{Objetivos}
+
+
+
+El objetivo es simular la comunicación de 2 arduinos y una raspberry. Para esto se utilizan la siguiente estructura de disparo de threads\+:
+\begin{DoxyItemize}
+\item Main
+\begin{DoxyItemize}
+\item Arduino R\+: Main
+\item Arduino L\+: Main
+\item Raspberry Pi
+\begin{DoxyItemize}
+\item Main
+\item Camara
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection*{Comunicaciones}
+
+Para simular la comunicación utilizo una Q\+U\+E\+UE con strings como elementos donde voy metiendo los mensajes que quiero mandar a otros dispositivos, y el otro dispositivo lee si le corresponde y si le corresponde lo pop, sino no hace nada.
+
+Una queue es para la simulación entre los arduinos y la raspberry y otra queue par ala comunicación dentro de la raspberry con la camara.
+
+\subsection*{Envio de datos}
+
+A continuación se muestra la estructura de los mensajes de cada dispositivo. \subsubsection*{I\+MU}
+
+!\+D\+AT\+:I\+M\+U\+:xxxx\+:yyyy\+:zzzz\+:\#
+
+\subsubsection*{C\+A\+M\+E\+RA}
+
+!\+D\+AT\+:C\+A\+M\+:xxxx\+:yyyy\+:zzzz\+:\#
+
+\subsubsection*{L\+A\+S\+ER}
+
+!\+D\+AT\+:L\+A\+S\+:xxxx\+:\# 

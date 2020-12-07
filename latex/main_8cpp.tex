@@ -1,0 +1,203 @@
+\hypertarget{main_8cpp}{}\section{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.\+cpp@{src/main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include \char`\"{}robsim.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_af8a13b4aeccb33617691498dadca25a2}{Arduino\+R\+Th} ()
+\begin{DoxyCompactList}\small\item\em Funcion que corre en el th del arduinoR. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a3718e281e59eea352be0e7aa1189207d}{Arduino\+L\+Th} ()
+\begin{DoxyCompactList}\small\item\em Funcion que corre en el th del arduinoL. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_ab6d88677f2b0a88c66275ac97eaa1527}{R\+P\+I\+Th} ()
+\begin{DoxyCompactList}\small\item\em Funcion que corre en el th de la raspberry. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_ace2c4f580f8a1badc288e911cbca18ae}{quit\+Th} ()
+\begin{DoxyCompactList}\small\item\em Funcion que corre un thread para verificar si se presiona enter y terminar el programa. \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Bucle principal del programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+atomic$<$ bool $>$ \hyperlink{main_8cpp_af681b8fa870c10c239dfb9dcbd4fe240}{quit\+\_\+now}
+\begin{DoxyCompactList}\small\item\em Variable para indicar que terminen los bucles de los threads. \end{DoxyCompactList}\item 
+mutex \hyperlink{main_8cpp_a0b9d34698ebe33272d55dbf4be7a9cef}{m\+\_\+queue}
+\begin{DoxyCompactList}\small\item\em Mutex para manejo de mensajes entre los embebidos. \end{DoxyCompactList}\item 
+mutex \hyperlink{main_8cpp_add406ead2e8a07502c1cbda9ab3d5e2a}{m\+\_\+cout}
+\begin{DoxyCompactList}\small\item\em Mutex para impresión en pantalla. \end{DoxyCompactList}\item 
+queue$<$ string $>$ \hyperlink{main_8cpp_ab9c1ea4772f1bf8606c9c03d8fde8004}{q}
+\begin{DoxyCompactList}\small\item\em Cola de los mensajes entre los embebidos. \end{DoxyCompactList}\item 
+mutex \hyperlink{main_8cpp_a80eab92ea6acdf16c892f565e977b3ea}{m\+\_\+queue\+\_\+cam}
+\begin{DoxyCompactList}\small\item\em Mutex para el manejo de mensajes en la cola de comuncacion Raspi-\/\+Camara. \end{DoxyCompactList}\item 
+queue$<$ string $>$ \hyperlink{main_8cpp_a9d9d2d537b4b54b3811d19aa4ac462e1}{q\+\_\+cam}
+\begin{DoxyCompactList}\small\item\em Cola de mensajes entre raspberry y camara. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a3718e281e59eea352be0e7aa1189207d}\label{main_8cpp_a3718e281e59eea352be0e7aa1189207d}} 
+\index{main.\+cpp@{main.\+cpp}!Arduino\+L\+Th@{Arduino\+L\+Th}}
+\index{Arduino\+L\+Th@{Arduino\+L\+Th}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Arduino\+L\+Th()}{ArduinoLTh()}}
+{\footnotesize\ttfamily void Arduino\+L\+Th (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion que corre en el th del arduinoL. 
+
+
+
+Definition at line 28 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_af8a13b4aeccb33617691498dadca25a2}\label{main_8cpp_af8a13b4aeccb33617691498dadca25a2}} 
+\index{main.\+cpp@{main.\+cpp}!Arduino\+R\+Th@{Arduino\+R\+Th}}
+\index{Arduino\+R\+Th@{Arduino\+R\+Th}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Arduino\+R\+Th()}{ArduinoRTh()}}
+{\footnotesize\ttfamily void Arduino\+R\+Th (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion que corre en el th del arduinoR. 
+
+
+
+Definition at line 21 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Bucle principal del programa. 
+
+
+
+Definition at line 54 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ace2c4f580f8a1badc288e911cbca18ae}\label{main_8cpp_ace2c4f580f8a1badc288e911cbca18ae}} 
+\index{main.\+cpp@{main.\+cpp}!quit\+Th@{quit\+Th}}
+\index{quit\+Th@{quit\+Th}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{quit\+Th()}{quitTh()}}
+{\footnotesize\ttfamily void quit\+Th (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion que corre un thread para verificar si se presiona enter y terminar el programa. 
+
+
+
+Definition at line 42 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ab6d88677f2b0a88c66275ac97eaa1527}\label{main_8cpp_ab6d88677f2b0a88c66275ac97eaa1527}} 
+\index{main.\+cpp@{main.\+cpp}!R\+P\+I\+Th@{R\+P\+I\+Th}}
+\index{R\+P\+I\+Th@{R\+P\+I\+Th}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{R\+P\+I\+Th()}{RPITh()}}
+{\footnotesize\ttfamily void R\+P\+I\+Th (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion que corre en el th de la raspberry. 
+
+
+
+Definition at line 35 of file main.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_add406ead2e8a07502c1cbda9ab3d5e2a}\label{main_8cpp_add406ead2e8a07502c1cbda9ab3d5e2a}} 
+\index{main.\+cpp@{main.\+cpp}!m\+\_\+cout@{m\+\_\+cout}}
+\index{m\+\_\+cout@{m\+\_\+cout}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{m\+\_\+cout}{m\_cout}}
+{\footnotesize\ttfamily mutex m\+\_\+cout}
+
+
+
+Mutex para impresión en pantalla. 
+
+
+
+Definition at line 13 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a0b9d34698ebe33272d55dbf4be7a9cef}\label{main_8cpp_a0b9d34698ebe33272d55dbf4be7a9cef}} 
+\index{main.\+cpp@{main.\+cpp}!m\+\_\+queue@{m\+\_\+queue}}
+\index{m\+\_\+queue@{m\+\_\+queue}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{m\+\_\+queue}{m\_queue}}
+{\footnotesize\ttfamily mutex m\+\_\+queue}
+
+
+
+Mutex para manejo de mensajes entre los embebidos. 
+
+
+
+Definition at line 12 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a80eab92ea6acdf16c892f565e977b3ea}\label{main_8cpp_a80eab92ea6acdf16c892f565e977b3ea}} 
+\index{main.\+cpp@{main.\+cpp}!m\+\_\+queue\+\_\+cam@{m\+\_\+queue\+\_\+cam}}
+\index{m\+\_\+queue\+\_\+cam@{m\+\_\+queue\+\_\+cam}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{m\+\_\+queue\+\_\+cam}{m\_queue\_cam}}
+{\footnotesize\ttfamily mutex m\+\_\+queue\+\_\+cam}
+
+
+
+Mutex para el manejo de mensajes en la cola de comuncacion Raspi-\/\+Camara. 
+
+
+
+Definition at line 15 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ab9c1ea4772f1bf8606c9c03d8fde8004}\label{main_8cpp_ab9c1ea4772f1bf8606c9c03d8fde8004}} 
+\index{main.\+cpp@{main.\+cpp}!q@{q}}
+\index{q@{q}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{q}{q}}
+{\footnotesize\ttfamily queue$<$string$>$ q}
+
+
+
+Cola de los mensajes entre los embebidos. 
+
+
+
+Definition at line 14 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a9d9d2d537b4b54b3811d19aa4ac462e1}\label{main_8cpp_a9d9d2d537b4b54b3811d19aa4ac462e1}} 
+\index{main.\+cpp@{main.\+cpp}!q\+\_\+cam@{q\+\_\+cam}}
+\index{q\+\_\+cam@{q\+\_\+cam}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{q\+\_\+cam}{q\_cam}}
+{\footnotesize\ttfamily queue$<$string$>$ q\+\_\+cam}
+
+
+
+Cola de mensajes entre raspberry y camara. 
+
+
+
+Definition at line 16 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_af681b8fa870c10c239dfb9dcbd4fe240}\label{main_8cpp_af681b8fa870c10c239dfb9dcbd4fe240}} 
+\index{main.\+cpp@{main.\+cpp}!quit\+\_\+now@{quit\+\_\+now}}
+\index{quit\+\_\+now@{quit\+\_\+now}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{quit\+\_\+now}{quit\_now}}
+{\footnotesize\ttfamily atomic$<$bool$>$ quit\+\_\+now}
+
+
+
+Variable para indicar que terminen los bucles de los threads. 
+
+
+
+Definition at line 11 of file main.\+cpp.
+
