@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classTelemetryMsg" kind="class" language="C++" prot="public">
+    <compoundname>TelemetryMsg</compoundname>
+    <basecompoundref refid="classMessage" prot="public" virt="non-virtual">Message</basecompoundref>
+    <includes refid="robsim_8h" local="no">robsim.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTelemetryMsg_1a930ff1a498097417aa25896e5ab92395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TelemetryMsg::TelemetryMsg</definition>
+        <argsstring>()</argsstring>
+        <name>TelemetryMsg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="161" column="1" bodyfile="src/robsim.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classTelemetryMsg_1a9c4b738c7a5fdbbaba534160de4f0ef1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TelemetryMsg::write_IMU</definition>
+        <argsstring>(double IMUx, double IMUy, double IMUz)</argsstring>
+        <name>write_IMU</name>
+        <param>
+          <type>double</type>
+          <declname>IMUx</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>IMUy</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>IMUz</declname>
+        </param>
+        <briefdescription>
+<para>Metodo que recibe los valores de aceleración de la IMU y lo escribe en un msj (atributo de clase base. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IMUx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Aceleración en x medida por la IMU </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">IMUy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Aceleración en y medida por la IMU </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">IMUz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Aceleración en z medida por la IMU </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="167" column="1" bodyfile="src/robsim.cpp" bodystart="127" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase mensaje de telemetria. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="51">
+        <label>TelemetryMsg</label>
+        <link refid="classTelemetryMsg"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>Message</label>
+        <link refid="classMessage"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="53">
+        <label>TelemetryMsg</label>
+        <link refid="classTelemetryMsg"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>Message</label>
+        <link refid="classMessage"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/robsim.h" line="159" column="1" bodyfile="src/robsim.h" bodystart="159" bodyend="168"/>
+    <listofallmembers>
+      <member refid="classMessage_1a503349764ac9e059395381da69375b5b" prot="public" virt="non-virtual"><scope>TelemetryMsg</scope><name>delete_msg</name></member>
+      <member refid="classMessage_1a2d91ea6e9b207fac52a616c60a5664a8" prot="public" virt="non-virtual"><scope>TelemetryMsg</scope><name>getType</name></member>
+      <member refid="classMessage_1aa42afac737625598fc895414fbb2e332" prot="public" virt="non-virtual"><scope>TelemetryMsg</scope><name>Message</name></member>
+      <member refid="classMessage_1a4fc4f717b634e66070366cb7722d7761" prot="public" virt="non-virtual"><scope>TelemetryMsg</scope><name>Message</name></member>
+      <member refid="classMessage_1accae179a21fb486b5e830edf36f5cffc" prot="public" virt="non-virtual"><scope>TelemetryMsg</scope><name>print_msg</name></member>
+      <member refid="classMessage_1a861344493c976ef1de90df8b464f36af" prot="public" virt="non-virtual"><scope>TelemetryMsg</scope><name>send_msg</name></member>
+      <member refid="classMessage_1acaa0b0c246dfbdd5c929911b27752b5c" prot="public" virt="non-virtual"><scope>TelemetryMsg</scope><name>setType</name></member>
+      <member refid="classTelemetryMsg_1a930ff1a498097417aa25896e5ab92395" prot="public" virt="non-virtual"><scope>TelemetryMsg</scope><name>TelemetryMsg</name></member>
+      <member refid="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2b" prot="public" virt="non-virtual"><scope>TelemetryMsg</scope><name>Type</name></member>
+      <member refid="classTelemetryMsg_1a9c4b738c7a5fdbbaba534160de4f0ef1" prot="public" virt="non-virtual"><scope>TelemetryMsg</scope><name>write_IMU</name></member>
+      <member refid="classMessage_1a9da1640bba6e0b0f63752f1927662ada" prot="public" virt="non-virtual"><scope>TelemetryMsg</scope><name>write_msg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

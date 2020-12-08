@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="utils_8cpp" kind="file" language="C++">
+    <compoundname>utils.cpp</compoundname>
+    <includes local="no">fstream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="utils_8h" local="yes">utils.h</includes>
+    <incdepgraph>
+      <node id="103">
+        <label>functional</label>
+      </node>
+      <node id="99">
+        <label>string</label>
+      </node>
+      <node id="95">
+        <label>fstream</label>
+      </node>
+      <node id="105">
+        <label>condition_variable</label>
+      </node>
+      <node id="100">
+        <label>vector</label>
+      </node>
+      <node id="98">
+        <label>utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>sstream</label>
+      </node>
+      <node id="97">
+        <label>iostream</label>
+      </node>
+      <node id="104">
+        <label>mutex</label>
+      </node>
+      <node id="101">
+        <label>chrono</label>
+      </node>
+      <node id="102">
+        <label>thread</label>
+      </node>
+      <node id="94">
+        <label>src/utils.cpp</label>
+        <link refid="utils_8cpp"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="utils_8cpp_1a1263999c182e68e204b84696cd247caa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_endMenu</definition>
+        <argsstring>(void)</argsstring>
+        <name>print_endMenu</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.cpp" line="13" column="1" bodyfile="src/utils.cpp" bodystart="13" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8cpp_1a94789c6523de64a6dda7f9b290bbd522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_initMenu</definition>
+        <argsstring>(void)</argsstring>
+        <name>print_initMenu</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.cpp" line="26" column="1" bodyfile="src/utils.cpp" bodystart="26" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8cpp_1ac026bb3b390444587a444a6b62655867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; Read_CSV_IMU_CAM</definition>
+        <argsstring>(string inputFileName)</argsstring>
+        <name>Read_CSV_IMU_CAM</name>
+        <param>
+          <type>string</type>
+          <declname>inputFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.cpp" line="44" column="1" bodyfile="src/utils.cpp" bodystart="44" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8cpp_1ae1f0b848799389e13cbdedd8a79bde42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string decode_msg</definition>
+        <argsstring>(string s, double v[3])</argsstring>
+        <name>decode_msg</name>
+        <param>
+          <type>string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.cpp" line="85" column="1" bodyfile="src/utils.cpp" bodystart="85" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/utils.cpp"/>
+  </compounddef>
+</doxygen>

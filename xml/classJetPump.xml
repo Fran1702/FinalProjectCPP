@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classJetPump" kind="class" language="C++" prot="public">
+    <compoundname>JetPump</compoundname>
+    <basecompoundref refid="classActuator" prot="public" virt="non-virtual">Actuator</basecompoundref>
+    <includes refid="robsim_8h" local="no">robsim.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classJetPump_1a29b0f6f5d6e5f9346f0ef910e6e98ba0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double JetPump::V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <briefdescription>
+<para>Tensión de la bomba. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="121" column="1" bodyfile="src/robsim.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classJetPump_1af259fad2aee62387e353b9911c8bb294" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JetPump::JetPump</definition>
+        <argsstring>()</argsstring>
+        <name>JetPump</name>
+        <briefdescription>
+<para>Constructor por defecto pone la tensión de la bomba en 0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="108" column="1" bodyfile="src/robsim.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJetPump_1ab817ef3e43d409ffbce2b72583866000" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void JetPump::set</definition>
+        <argsstring>(double V_)</argsstring>
+        <name>set</name>
+        <param>
+          <type>double</type>
+          <declname>V_</declname>
+        </param>
+        <briefdescription>
+<para>Función que setea el valor de tensión de la bomba. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">V_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensión que quiero colocar en la bomba </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="113" column="1" bodyfile="src/robsim.h" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classJetPump_1adb125b513288b6783cc27fce155a6cb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double JetPump::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+<para>Función que retorna el valor de la tensión actual de la bomba. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Tensión en la bomba </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="119" column="1" bodyfile="src/robsim.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase <ref refid="classJetPump" kindref="compound">JetPump</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Representa una bombita del robot Tiene como atributo la tensión en bornes de la bomba y metodos que permiten setear y leer este valor </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="33">
+        <label>JetPump</label>
+        <link refid="classJetPump"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Actuator</label>
+        <link refid="classActuator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="35">
+        <label>JetPump</label>
+        <link refid="classJetPump"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Actuator</label>
+        <link refid="classActuator"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/robsim.h" line="106" column="1" bodyfile="src/robsim.h" bodystart="106" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classJetPump_1adb125b513288b6783cc27fce155a6cb5" prot="public" virt="non-virtual"><scope>JetPump</scope><name>get</name></member>
+      <member refid="classJetPump_1af259fad2aee62387e353b9911c8bb294" prot="public" virt="non-virtual"><scope>JetPump</scope><name>JetPump</name></member>
+      <member refid="classJetPump_1ab817ef3e43d409ffbce2b72583866000" prot="public" virt="non-virtual"><scope>JetPump</scope><name>set</name></member>
+      <member refid="classJetPump_1a29b0f6f5d6e5f9346f0ef910e6e98ba0" prot="private" virt="non-virtual"><scope>JetPump</scope><name>V</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

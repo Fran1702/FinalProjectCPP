@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classMessage" kind="class" language="C++" prot="public">
+    <compoundname>Message</compoundname>
+    <derivedcompoundref refid="classActionMsg" prot="public" virt="non-virtual">ActionMsg</derivedcompoundref>
+    <derivedcompoundref refid="classCameraMsg" prot="public" virt="non-virtual">CameraMsg</derivedcompoundref>
+    <derivedcompoundref refid="classTelemetryMsg" prot="public" virt="non-virtual">TelemetryMsg</derivedcompoundref>
+    <includes refid="robsim_8h" local="no">robsim.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2b" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2babb3d2d909c73fe49800949a344775f8b" prot="public">
+          <name>TELEMETRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2bae58a1b00942e66d8b4abc960da7877ab" prot="public">
+          <name>ACTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2baddf0d6b21537d984fea6544f58101fa8" prot="public">
+          <name>CAMERA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="141" column="1" bodyfile="src/robsim.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMessage_1a7bfcfd3ea53c0339277c05ec47758cac" prot="private" static="no" mutable="no">
+        <type><ref refid="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2b" kindref="member">Type</ref></type>
+        <definition>Type Message::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="152" column="1" bodyfile="src/robsim.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMessage_1adbe98f7e813775fe7e809f1a08899733" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Message::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="153" column="1" bodyfile="src/robsim.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMessage_1a2d91ea6e9b207fac52a616c60a5664a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2b" kindref="member">Type</ref></type>
+        <definition>Type Message::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMessage_1acaa0b0c246dfbdd5c929911b27752b5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Message::setType</definition>
+        <argsstring>(Type t)</argsstring>
+        <name>setType</name>
+        <param>
+          <type><ref refid="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2b" kindref="member">Type</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="143" column="1" bodyfile="src/robsim.h" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classMessage_1a861344493c976ef1de90df8b464f36af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Message::send_msg</definition>
+        <argsstring>(std::queue&lt; std::string &gt; &amp;q)</argsstring>
+        <name>send_msg</name>
+        <param>
+          <type>std::queue&lt; std::string &gt; &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="144" column="1" bodyfile="src/robsim.cpp" bodystart="53" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classMessage_1a9da1640bba6e0b0f63752f1927662ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Message::write_msg</definition>
+        <argsstring>(std::string msg_)</argsstring>
+        <name>write_msg</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="145" column="1" bodyfile="src/robsim.cpp" bodystart="89" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classMessage_1accae179a21fb486b5e830edf36f5cffc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Message::print_msg</definition>
+        <argsstring>()</argsstring>
+        <name>print_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="146" column="1" bodyfile="src/robsim.cpp" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classMessage_1a503349764ac9e059395381da69375b5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Message::delete_msg</definition>
+        <argsstring>(void)</argsstring>
+        <name>delete_msg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="147" column="1" bodyfile="src/robsim.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classMessage_1aa42afac737625598fc895414fbb2e332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Message::Message</definition>
+        <argsstring>(std::string msg_)</argsstring>
+        <name>Message</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMessage_1a4fc4f717b634e66070366cb7722d7761" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Message::Message</definition>
+        <argsstring>()</argsstring>
+        <name>Message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="149" column="1" bodyfile="src/robsim.cpp" bodystart="100" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase Mensaje. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="38">
+        <label>ActionMsg</label>
+        <link refid="classActionMsg"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>TelemetryMsg</label>
+        <link refid="classTelemetryMsg"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Message</label>
+        <link refid="classMessage"/>
+      </node>
+      <node id="39">
+        <label>CameraMsg</label>
+        <link refid="classCameraMsg"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/robsim.h" line="139" column="1" bodyfile="src/robsim.h" bodystart="139" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classMessage_1a503349764ac9e059395381da69375b5b" prot="public" virt="non-virtual"><scope>Message</scope><name>delete_msg</name></member>
+      <member refid="classMessage_1a2d91ea6e9b207fac52a616c60a5664a8" prot="public" virt="non-virtual"><scope>Message</scope><name>getType</name></member>
+      <member refid="classMessage_1aa42afac737625598fc895414fbb2e332" prot="public" virt="non-virtual"><scope>Message</scope><name>Message</name></member>
+      <member refid="classMessage_1a4fc4f717b634e66070366cb7722d7761" prot="public" virt="non-virtual"><scope>Message</scope><name>Message</name></member>
+      <member refid="classMessage_1adbe98f7e813775fe7e809f1a08899733" prot="private" virt="non-virtual"><scope>Message</scope><name>msg</name></member>
+      <member refid="classMessage_1accae179a21fb486b5e830edf36f5cffc" prot="public" virt="non-virtual"><scope>Message</scope><name>print_msg</name></member>
+      <member refid="classMessage_1a861344493c976ef1de90df8b464f36af" prot="public" virt="non-virtual"><scope>Message</scope><name>send_msg</name></member>
+      <member refid="classMessage_1acaa0b0c246dfbdd5c929911b27752b5c" prot="public" virt="non-virtual"><scope>Message</scope><name>setType</name></member>
+      <member refid="classMessage_1a7bfcfd3ea53c0339277c05ec47758cac" prot="private" virt="non-virtual"><scope>Message</scope><name>type</name></member>
+      <member refid="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2b" prot="public" virt="non-virtual"><scope>Message</scope><name>Type</name></member>
+      <member refid="classMessage_1a9da1640bba6e0b0f63752f1927662ada" prot="public" virt="non-virtual"><scope>Message</scope><name>write_msg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

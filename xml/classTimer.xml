@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classTimer" kind="class" language="C++" prot="public">
+    <compoundname>Timer</compoundname>
+    <includes refid="timer_8h" local="no">timer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTimer_1adfb4ba6b7c255dfc7ee86ef126346e49" prot="private" static="no" mutable="no">
+        <type>std::function&lt; void(void)&gt;</type>
+        <definition>std::function&lt;void(void)&gt; Timer::m_func</definition>
+        <argsstring></argsstring>
+        <name>m_func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="114" column="1" bodyfile="src/timer.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimer_1a4b165ca4f5c176ab1bc44a7663b4b24e" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Timer::m_interval</definition>
+        <argsstring></argsstring>
+        <name>m_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="116" column="1" bodyfile="src/timer.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimer_1aafb647899215fcb71ee8ad8c70d98a5e" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread Timer::m_thread</definition>
+        <argsstring></argsstring>
+        <name>m_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="119" column="1" bodyfile="src/timer.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTimer_1aaaaae685c2b6c6427301ab018bdf098f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Timer::m_running</definition>
+        <argsstring></argsstring>
+        <name>m_running</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="121" column="1" bodyfile="src/timer.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTimer_1a5f16e8da27d2a5a5242dead46de05d97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Timer::Timer</definition>
+        <argsstring>()</argsstring>
+        <name>Timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="25" column="1" bodyfile="src/timer.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimer_1a6e5fa1d67967d471f368218e1d0ae807" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Timer::Timer</definition>
+        <argsstring>(std::function&lt; void(void)&gt; func, const long &amp;interval)</argsstring>
+        <name>Timer</name>
+        <param>
+          <type>std::function&lt; void(void)&gt;</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>const long &amp;</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="27" column="1" bodyfile="src/timer.h" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimer_1a3a8b5272198d029779dc9302a54305a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+<para>Starting the timer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="35" column="1" bodyfile="src/timer.h" bodystart="35" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimer_1a63f0eb44b27402196590a03781515dba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="50" column="1" bodyfile="src/timer.h" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimer_1aa3f7871196bb56202af2bc982bfbfff6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::restart</definition>
+        <argsstring>()</argsstring>
+        <name>restart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="59" column="1" bodyfile="src/timer.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimer_1a2ef50bfc604ea9fb88d3000c9ad0edd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Timer::isRunning</definition>
+        <argsstring>()</argsstring>
+        <name>isRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="69" column="1" bodyfile="src/timer.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimer_1a70653847aa7ae39d66379597e37db6af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classTimer" kindref="compound">Timer</ref> *</type>
+        <definition>Timer* Timer::setFunc</definition>
+        <argsstring>(std::function&lt; void(void)&gt; func)</argsstring>
+        <name>setFunc</name>
+        <param>
+          <type>std::function&lt; void(void)&gt;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="81" column="1" bodyfile="src/timer.h" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimer_1a0da8462797c35f5a91e7246eeed32198" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long Timer::getInterval</definition>
+        <argsstring>()</argsstring>
+        <name>getInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="91" column="1" bodyfile="src/timer.h" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimer_1abdc4f70c2dc58ee37b62861c842b77f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classTimer" kindref="compound">Timer</ref> *</type>
+        <definition>Timer* Timer::setInterval</definition>
+        <argsstring>(const long &amp;interval)</argsstring>
+        <name>setInterval</name>
+        <param>
+          <type>const long &amp;</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="103" column="1" bodyfile="src/timer.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classTimer_1a14fa469c4c295c5fa6e66a4ad1092146" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Timer::~Timer</definition>
+        <argsstring>()</argsstring>
+        <name>~Timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/timer.h" line="108" column="1" bodyfile="src/timer.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Create asynchronous timers which execute specified functions in set time interval. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function which sould be executed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interval of time in which function will be executed (in milliseconds) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="src/timer.h" line="22" column="1" bodyfile="src/timer.h" bodystart="22" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classTimer_1a0da8462797c35f5a91e7246eeed32198" prot="public" virt="non-virtual"><scope>Timer</scope><name>getInterval</name></member>
+      <member refid="classTimer_1a2ef50bfc604ea9fb88d3000c9ad0edd9" prot="public" virt="non-virtual"><scope>Timer</scope><name>isRunning</name></member>
+      <member refid="classTimer_1adfb4ba6b7c255dfc7ee86ef126346e49" prot="private" virt="non-virtual"><scope>Timer</scope><name>m_func</name></member>
+      <member refid="classTimer_1a4b165ca4f5c176ab1bc44a7663b4b24e" prot="private" virt="non-virtual"><scope>Timer</scope><name>m_interval</name></member>
+      <member refid="classTimer_1aaaaae685c2b6c6427301ab018bdf098f" prot="private" virt="non-virtual"><scope>Timer</scope><name>m_running</name></member>
+      <member refid="classTimer_1aafb647899215fcb71ee8ad8c70d98a5e" prot="private" virt="non-virtual"><scope>Timer</scope><name>m_thread</name></member>
+      <member refid="classTimer_1aa3f7871196bb56202af2bc982bfbfff6" prot="public" virt="non-virtual"><scope>Timer</scope><name>restart</name></member>
+      <member refid="classTimer_1a70653847aa7ae39d66379597e37db6af" prot="public" virt="non-virtual"><scope>Timer</scope><name>setFunc</name></member>
+      <member refid="classTimer_1abdc4f70c2dc58ee37b62861c842b77f0" prot="public" virt="non-virtual"><scope>Timer</scope><name>setInterval</name></member>
+      <member refid="classTimer_1a3a8b5272198d029779dc9302a54305a8" prot="public" virt="non-virtual"><scope>Timer</scope><name>start</name></member>
+      <member refid="classTimer_1a63f0eb44b27402196590a03781515dba" prot="public" virt="non-virtual"><scope>Timer</scope><name>stop</name></member>
+      <member refid="classTimer_1a5f16e8da27d2a5a5242dead46de05d97" prot="public" virt="non-virtual"><scope>Timer</scope><name>Timer</name></member>
+      <member refid="classTimer_1a6e5fa1d67967d471f368218e1d0ae807" prot="public" virt="non-virtual"><scope>Timer</scope><name>Timer</name></member>
+      <member refid="classTimer_1a14fa469c4c295c5fa6e66a4ad1092146" prot="public" virt="non-virtual"><scope>Timer</scope><name>~Timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

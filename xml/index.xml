@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classActionMsg" kind="class"><name>ActionMsg</name>
+    <member refid="classActionMsg_1ab22c6cee704bd1ee2dbcbf54dd16cc4c" kind="function"><name>ActionMsg</name></member>
+  </compound>
+  <compound refid="classActuator" kind="class"><name>Actuator</name>
+  </compound>
+  <compound refid="classArduinoL" kind="class"><name>ArduinoL</name>
+    <member refid="classArduinoL_1a27a3e0f5bfbf48f558bce2d31a72d502" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classArduinoR" kind="class"><name>ArduinoR</name>
+    <member refid="classArduinoR_1a479b06fd9527e9810b37b91da8fb0f7e" kind="function"><name>main</name></member>
+    <member refid="classArduinoR_1a8365ffa8bde5c67337aa9b31fe08f83f" kind="function"><name>readIMU</name></member>
+  </compound>
+  <compound refid="classCamera" kind="class"><name>Camera</name>
+    <member refid="classCamera_1a1719371e1e57ad18abfa5dd3d971bb39" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classCameraMsg" kind="class"><name>CameraMsg</name>
+    <member refid="classCameraMsg_1a5c60f7195b2abc7fdbd2c4568c8708d4" kind="function"><name>CameraMsg</name></member>
+    <member refid="classCameraMsg_1a533eef67ac13dabdb81969eff6aaa267" kind="function"><name>write_pos</name></member>
+  </compound>
+  <compound refid="classDistSens" kind="class"><name>DistSens</name>
+  </compound>
+  <compound refid="classEmbededSystem" kind="class"><name>EmbededSystem</name>
+    <member refid="classEmbededSystem_1a3a333d4954af4068f5e97301b4f55c48" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classJetPump" kind="class"><name>JetPump</name>
+    <member refid="classJetPump_1a29b0f6f5d6e5f9346f0ef910e6e98ba0" kind="variable"><name>V</name></member>
+    <member refid="classJetPump_1af259fad2aee62387e353b9911c8bb294" kind="function"><name>JetPump</name></member>
+    <member refid="classJetPump_1ab817ef3e43d409ffbce2b72583866000" kind="function"><name>set</name></member>
+    <member refid="classJetPump_1adb125b513288b6783cc27fce155a6cb5" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="classMessage" kind="class"><name>Message</name>
+    <member refid="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2b" kind="enum"><name>Type</name></member>
+    <member refid="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2babb3d2d909c73fe49800949a344775f8b" kind="enumvalue"><name>TELEMETRY</name></member>
+    <member refid="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2bae58a1b00942e66d8b4abc960da7877ab" kind="enumvalue"><name>ACTION</name></member>
+    <member refid="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2baddf0d6b21537d984fea6544f58101fa8" kind="enumvalue"><name>CAMERA</name></member>
+    <member refid="classMessage_1a7bfcfd3ea53c0339277c05ec47758cac" kind="variable"><name>type</name></member>
+    <member refid="classMessage_1adbe98f7e813775fe7e809f1a08899733" kind="variable"><name>msg</name></member>
+    <member refid="classMessage_1a2d91ea6e9b207fac52a616c60a5664a8" kind="function"><name>getType</name></member>
+    <member refid="classMessage_1acaa0b0c246dfbdd5c929911b27752b5c" kind="function"><name>setType</name></member>
+    <member refid="classMessage_1a861344493c976ef1de90df8b464f36af" kind="function"><name>send_msg</name></member>
+    <member refid="classMessage_1a9da1640bba6e0b0f63752f1927662ada" kind="function"><name>write_msg</name></member>
+    <member refid="classMessage_1accae179a21fb486b5e830edf36f5cffc" kind="function"><name>print_msg</name></member>
+    <member refid="classMessage_1a503349764ac9e059395381da69375b5b" kind="function"><name>delete_msg</name></member>
+    <member refid="classMessage_1aa42afac737625598fc895414fbb2e332" kind="function"><name>Message</name></member>
+    <member refid="classMessage_1a4fc4f717b634e66070366cb7722d7761" kind="function"><name>Message</name></member>
+  </compound>
+  <compound refid="classMPU9250" kind="class"><name>MPU9250</name>
+    <member refid="classMPU9250_1ab3d0117a094b81ac2e07f5c2d68aa5f4" kind="variable"><name>pitch</name></member>
+    <member refid="classMPU9250_1a0493fbbf09cb14b8695a1eb804136e34" kind="variable"><name>yaw</name></member>
+    <member refid="classMPU9250_1ad394d6659aa446adff547feaa4985f94" kind="variable"><name>roll</name></member>
+    <member refid="classMPU9250_1a2190394242c2b74ff53c20f8180af287" kind="variable"><name>temperature</name></member>
+    <member refid="classMPU9250_1a8fa1b4fa4bc8db4bd162bc4f8ee8f0ea" kind="variable"><name>tempCount</name></member>
+    <member refid="classMPU9250_1a4d6b6338685120de2e21aa30d9d89389" kind="variable"><name>delt_t</name></member>
+    <member refid="classMPU9250_1a9d231520d019ba7879c60ef7b72707a5" kind="variable"><name>count</name></member>
+    <member refid="classMPU9250_1a604d036ab632885152ab770b3c64676a" kind="variable"><name>sumCount</name></member>
+    <member refid="classMPU9250_1a1e53d31ab289b64a0d6393b17e8b807e" kind="variable"><name>deltat</name></member>
+    <member refid="classMPU9250_1ac40db4e2fb94e9b33ec0b821c0b6ed2d" kind="variable"><name>sum</name></member>
+    <member refid="classMPU9250_1af60ee039dadb9eb5f4ade404ddfd878b" kind="variable"><name>lastUpdate</name></member>
+    <member refid="classMPU9250_1a4ea2c930abf4529a3888885f9d928cf4" kind="variable"><name>firstUpdate</name></member>
+    <member refid="classMPU9250_1a96b7d70d685ed53744c69acc9f7ef1af" kind="variable"><name>Now</name></member>
+    <member refid="classMPU9250_1a14ab2e2ab741ca245007cb9a134e07f3" kind="variable"><name>gyroCount</name></member>
+    <member refid="classMPU9250_1aff92db5334c43a72f5c2f1fc8ee6f596" kind="variable"><name>magCount</name></member>
+    <member refid="classMPU9250_1afa89af2772cead0f76a4ddd92ec5f6a8" kind="variable"><name>aRes</name></member>
+    <member refid="classMPU9250_1a2c137b20138d3c80c4828691d5656d92" kind="variable"><name>gRes</name></member>
+    <member refid="classMPU9250_1a173e0594b9d3ecb6ece2b71f9f59fc50" kind="variable"><name>mRes</name></member>
+    <member refid="classMPU9250_1aea8a7622821bf8aca55fcef71d91e29f" kind="variable"><name>ax</name></member>
+    <member refid="classMPU9250_1a5129e95dbe12544fa34cc53b5644ff71" kind="variable"><name>ay</name></member>
+    <member refid="classMPU9250_1a8ab7a335476e40a26aba80f867ac7da9" kind="variable"><name>az</name></member>
+    <member refid="classMPU9250_1a59b6d7bd37738bac258da24ad330feef" kind="variable"><name>gx</name></member>
+    <member refid="classMPU9250_1a126311c382d2667b7bc7cbe1f9b38b51" kind="variable"><name>gy</name></member>
+    <member refid="classMPU9250_1a756658ca06a3807ef426ab87022a15c9" kind="variable"><name>gz</name></member>
+    <member refid="classMPU9250_1aa4cc8b2c9417304d1106bdbd988ac607" kind="variable"><name>mx</name></member>
+    <member refid="classMPU9250_1ad7cf9fe3134d24f46705881b2e002f31" kind="variable"><name>my</name></member>
+    <member refid="classMPU9250_1af11072922aa71ffb125fe3786f848653" kind="variable"><name>mz</name></member>
+    <member refid="classMPU9250_1a30d462461868e4f306c2f47d1adbd1d2" kind="variable"><name>factoryMagCalibration</name></member>
+    <member refid="classMPU9250_1af34938d098b83ec910bee1b51a41972f" kind="variable"><name>factoryMagBias</name></member>
+    <member refid="classMPU9250_1a4fc2232b3fdbd61bc1024c86842ddf9a" kind="variable"><name>gyroBias</name></member>
+    <member refid="classMPU9250_1a7b0e6389baccd5592c95cae9d24d1317" kind="variable"><name>accelBias</name></member>
+    <member refid="classMPU9250_1a1f3b364d6efca22837dd944c60effce5" kind="variable"><name>magBias</name></member>
+    <member refid="classMPU9250_1a09f641aa48a5c7228a6ea5034e0391c3" kind="variable"><name>magScale</name></member>
+    <member refid="classMPU9250_1afd15093e18fc34ce15e526f464fc557a" kind="variable"><name>selfTest</name></member>
+    <member refid="classMPU9250_1adb56df6ceaf1dc204f97270540ac8b14" kind="variable"><name>accelCount</name></member>
+    <member refid="classMPU9250_1ab6b113da9b2fb006eb44dc8078e699c5" kind="function"><name>getMres</name></member>
+    <member refid="classMPU9250_1afd804ec9bd68961fc0084af461104304" kind="function"><name>getGres</name></member>
+    <member refid="classMPU9250_1a1c7dba3645913bf97f8b47d2bd4af2b0" kind="function"><name>getAres</name></member>
+    <member refid="classMPU9250_1a66dc74fdb59049f61e1e86e4b71aabac" kind="function"><name>readAccelData</name></member>
+    <member refid="classMPU9250_1a7f0f6be23ed65146391cf91e4739ccc0" kind="function"><name>readGyroData</name></member>
+    <member refid="classMPU9250_1a5d3589bd83a003da56546474dd9ca519" kind="function"><name>readMagData</name></member>
+    <member refid="classMPU9250_1a3ab318a519e0f85a38d0e40d4bedc89f" kind="function"><name>readTempData</name></member>
+    <member refid="classMPU9250_1a39e17cffe3de219d3f991b6476833e40" kind="function"><name>updateTime</name></member>
+    <member refid="classMPU9250_1aab7b6d912fdc88c4fedfad90abe2aeab" kind="function"><name>initAK8963</name></member>
+    <member refid="classMPU9250_1a03803202142ac461867daa9dd06fdd80" kind="function"><name>initMPU9250</name></member>
+    <member refid="classMPU9250_1aeac1ae4402a4eb9a74bea5ad8af929c1" kind="function"><name>calibrateMPU9250</name></member>
+    <member refid="classMPU9250_1ad3bbdef687191a70354ee2f900352993" kind="function"><name>MPU9250SelfTest</name></member>
+    <member refid="classMPU9250_1ad2ebbfb1d321b9c3312f4ae298214020" kind="function"><name>magCalMPU9250</name></member>
+    <member refid="classMPU9250_1a136cd20820be776769c6214640c4130e" kind="function"><name>writeByte</name></member>
+    <member refid="classMPU9250_1a846032e6a6d737f4ff62065ca0e1568f" kind="function"><name>readByte</name></member>
+    <member refid="classMPU9250_1a083e837c203b46e9af4a5900b731770f" kind="function"><name>readBytes</name></member>
+    <member refid="classMPU9250_1a9845d64636a0c0eb1a3ba99eb44ebdd4" kind="function"><name>readBytesSPI</name></member>
+    <member refid="classMPU9250_1a79ec9d87d525be62139a4d31d0538ba3" kind="function"><name>readBytesWire</name></member>
+    <member refid="classMPU9250_1a59e39b2fef2bdb29197bcbd765ec5bae" kind="function"><name>begin</name></member>
+  </compound>
+  <compound refid="classRaspi" kind="class"><name>Raspi</name>
+    <member refid="classRaspi_1adce86197732891370a63b239cc413c7e" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classSensor" kind="class"><name>Sensor</name>
+  </compound>
+  <compound refid="classTelemetryMsg" kind="class"><name>TelemetryMsg</name>
+    <member refid="classTelemetryMsg_1a930ff1a498097417aa25896e5ab92395" kind="function"><name>TelemetryMsg</name></member>
+    <member refid="classTelemetryMsg_1a9c4b738c7a5fdbbaba534160de4f0ef1" kind="function"><name>write_IMU</name></member>
+  </compound>
+  <compound refid="classTimer" kind="class"><name>Timer</name>
+    <member refid="classTimer_1adfb4ba6b7c255dfc7ee86ef126346e49" kind="variable"><name>m_func</name></member>
+    <member refid="classTimer_1a4b165ca4f5c176ab1bc44a7663b4b24e" kind="variable"><name>m_interval</name></member>
+    <member refid="classTimer_1aafb647899215fcb71ee8ad8c70d98a5e" kind="variable"><name>m_thread</name></member>
+    <member refid="classTimer_1aaaaae685c2b6c6427301ab018bdf098f" kind="variable"><name>m_running</name></member>
+    <member refid="classTimer_1a5f16e8da27d2a5a5242dead46de05d97" kind="function"><name>Timer</name></member>
+    <member refid="classTimer_1a6e5fa1d67967d471f368218e1d0ae807" kind="function"><name>Timer</name></member>
+    <member refid="classTimer_1a3a8b5272198d029779dc9302a54305a8" kind="function"><name>start</name></member>
+    <member refid="classTimer_1a63f0eb44b27402196590a03781515dba" kind="function"><name>stop</name></member>
+    <member refid="classTimer_1aa3f7871196bb56202af2bc982bfbfff6" kind="function"><name>restart</name></member>
+    <member refid="classTimer_1a2ef50bfc604ea9fb88d3000c9ad0edd9" kind="function"><name>isRunning</name></member>
+    <member refid="classTimer_1a70653847aa7ae39d66379597e37db6af" kind="function"><name>setFunc</name></member>
+    <member refid="classTimer_1a0da8462797c35f5a91e7246eeed32198" kind="function"><name>getInterval</name></member>
+    <member refid="classTimer_1abdc4f70c2dc58ee37b62861c842b77f0" kind="function"><name>setInterval</name></member>
+    <member refid="classTimer_1a14fa469c4c295c5fa6e66a4ad1092146" kind="function"><name>~Timer</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1af681b8fa870c10c239dfb9dcbd4fe240" kind="variable"><name>quit_now</name></member>
+    <member refid="main_8cpp_1a0b9d34698ebe33272d55dbf4be7a9cef" kind="variable"><name>m_queue</name></member>
+    <member refid="main_8cpp_1add406ead2e8a07502c1cbda9ab3d5e2a" kind="variable"><name>m_cout</name></member>
+    <member refid="main_8cpp_1ab9c1ea4772f1bf8606c9c03d8fde8004" kind="variable"><name>q</name></member>
+    <member refid="main_8cpp_1a80eab92ea6acdf16c892f565e977b3ea" kind="variable"><name>m_queue_cam</name></member>
+    <member refid="main_8cpp_1a9d9d2d537b4b54b3811d19aa4ac462e1" kind="variable"><name>q_cam</name></member>
+    <member refid="main_8cpp_1af8a13b4aeccb33617691498dadca25a2" kind="function"><name>ArduinoRTh</name></member>
+    <member refid="main_8cpp_1a3718e281e59eea352be0e7aa1189207d" kind="function"><name>ArduinoLTh</name></member>
+    <member refid="main_8cpp_1ab6d88677f2b0a88c66275ac97eaa1527" kind="function"><name>RPITh</name></member>
+    <member refid="main_8cpp_1ace2c4f580f8a1badc288e911cbca18ae" kind="function"><name>quitTh</name></member>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="main_8md" kind="file"><name>main.md</name>
+  </compound>
+  <compound refid="Readme_8md" kind="file"><name>Readme.md</name>
+  </compound>
+  <compound refid="robsim_8cpp" kind="file"><name>robsim.cpp</name>
+    <member refid="robsim_8cpp_1a7ac2ec469c5986de6309d55a49dece55" kind="define"><name>SAMPLE_TIME_ARDUINO</name></member>
+    <member refid="robsim_8cpp_1a19199de75b4f4eb26cb503afea095e91" kind="define"><name>SAMPLE_TIME_CAMERA</name></member>
+    <member refid="robsim_8cpp_1acc46c880b139b5895f6a8236b3aff526" kind="define"><name>SAMPLE_TIME_RASPI</name></member>
+    <member refid="robsim_8cpp_1abfd055405fc0db9a96a29057436d7e6b" kind="function"><name>time_falt_next_interv_ms</name></member>
+    <member refid="robsim_8cpp_1ae9bdf1cf8a02cfad30e904f75ede4f4e" kind="function"><name>espera_siguiente_intervalo</name></member>
+    <member refid="robsim_8cpp_1a40a893993ca0fba530429f44aa0b176f" kind="function"><name>f</name></member>
+    <member refid="robsim_8cpp_1a075142c6dceedf39581a5038d5c9edf7" kind="function"><name>CamTh</name></member>
+  </compound>
+  <compound refid="robsim_8h" kind="file"><name>robsim.h</name>
+    <member refid="robsim_8h_1a6a7d0aa2f8672b5fd4207bf9a4d2912d" kind="define"><name>MSG_TELEMETRY</name></member>
+    <member refid="robsim_8h_1add686b3cb16e812ad19e05944997c2a7" kind="define"><name>MSG_ACTION</name></member>
+    <member refid="robsim_8h_1ad066d2f092a3d1bb49aca1f9524c66c3" kind="define"><name>MSG_CAMERA</name></member>
+    <member refid="robsim_8h_1abfd055405fc0db9a96a29057436d7e6b" kind="function"><name>time_falt_next_interv_ms</name></member>
+    <member refid="robsim_8h_1ae9bdf1cf8a02cfad30e904f75ede4f4e" kind="function"><name>espera_siguiente_intervalo</name></member>
+  </compound>
+  <compound refid="sensors_8cpp" kind="file"><name>sensors.cpp</name>
+  </compound>
+  <compound refid="sensors_8h" kind="file"><name>sensors.h</name>
+  </compound>
+  <compound refid="timer_8h" kind="file"><name>timer.h</name>
+  </compound>
+  <compound refid="utils_8cpp" kind="file"><name>utils.cpp</name>
+    <member refid="utils_8cpp_1a1263999c182e68e204b84696cd247caa" kind="function"><name>print_endMenu</name></member>
+    <member refid="utils_8cpp_1a94789c6523de64a6dda7f9b290bbd522" kind="function"><name>print_initMenu</name></member>
+    <member refid="utils_8cpp_1ac026bb3b390444587a444a6b62655867" kind="function"><name>Read_CSV_IMU_CAM</name></member>
+    <member refid="utils_8cpp_1ae1f0b848799389e13cbdedd8a79bde42" kind="function"><name>decode_msg</name></member>
+  </compound>
+  <compound refid="utils_8h" kind="file"><name>utils.h</name>
+    <member refid="utils_8h_1ac0e2b53a3ea9ebce1dacd9413579ec69" kind="define"><name>MSG_DELIMITER</name></member>
+    <member refid="utils_8h_1af392d7ee4f29a6a09970819dbd725c20" kind="define"><name>MSG_IMU</name></member>
+    <member refid="utils_8h_1a341cff82fa08399b66ed950cd301ffb6" kind="define"><name>MSG_CAM</name></member>
+    <member refid="utils_8h_1a43ca248958b3afe7f7c898a9e62b5a9c" kind="define"><name>MSG_BOM</name></member>
+    <member refid="utils_8h_1abf71abaffc4210c79acd651db9db90f8" kind="define"><name>MSG_LAS</name></member>
+    <member refid="utils_8h_1ac026bb3b390444587a444a6b62655867" kind="function"><name>Read_CSV_IMU_CAM</name></member>
+    <member refid="utils_8h_1ae1f0b848799389e13cbdedd8a79bde42" kind="function"><name>decode_msg</name></member>
+    <member refid="utils_8h_1a94789c6523de64a6dda7f9b290bbd522" kind="function"><name>print_initMenu</name></member>
+    <member refid="utils_8h_1a1263999c182e68e204b84696cd247caa" kind="function"><name>print_endMenu</name></member>
+  </compound>
+  <compound refid="md_src_Readme" kind="page"><name>md_src_Readme</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

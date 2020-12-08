@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classDistSens" kind="class" language="C++" prot="public">
+    <compoundname>DistSens</compoundname>
+    <basecompoundref refid="classSensor" prot="public" virt="non-virtual">Sensor</basecompoundref>
+    <includes refid="robsim_8h" local="no">robsim.h</includes>
+    <briefdescription>
+<para>Clase que representa el sensor de dist. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="24">
+        <label>Sensor</label>
+        <link refid="classSensor"/>
+      </node>
+      <node id="23">
+        <label>DistSens</label>
+        <link refid="classDistSens"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="26">
+        <label>Sensor</label>
+        <link refid="classSensor"/>
+      </node>
+      <node id="25">
+        <label>DistSens</label>
+        <link refid="classDistSens"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/robsim.h" line="133" column="1" bodyfile="src/robsim.h" bodystart="133" bodyend="135"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

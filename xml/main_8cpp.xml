@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">mutex</includes>
+    <includes refid="robsim_8h" local="yes">robsim.h</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">atomic</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>atomic</label>
+      </node>
+      <node id="12">
+        <label>functional</label>
+      </node>
+      <node id="4">
+        <label>queue</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>sensors.h</label>
+        <link refid="sensors_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>condition_variable</label>
+      </node>
+      <node id="3">
+        <label>robsim.h</label>
+        <link refid="robsim_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+      <node id="7">
+        <label>utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>sys/time.h</label>
+      </node>
+      <node id="1">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>mutex</label>
+      </node>
+      <node id="10">
+        <label>chrono</label>
+      </node>
+      <node id="11">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="main_8cpp_1af681b8fa870c10c239dfb9dcbd4fe240" prot="public" static="no" mutable="no">
+        <type>atomic&lt; bool &gt;</type>
+        <definition>atomic&lt;bool&gt; quit_now</definition>
+        <argsstring></argsstring>
+        <name>quit_now</name>
+        <briefdescription>
+<para>Variable para indicar que terminen los bucles de los threads. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="11" column="1" bodyfile="src/main.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8cpp_1a0b9d34698ebe33272d55dbf4be7a9cef" prot="public" static="no" mutable="no">
+        <type>mutex</type>
+        <definition>mutex m_queue</definition>
+        <argsstring></argsstring>
+        <name>m_queue</name>
+        <briefdescription>
+<para>Mutex para manejo de mensajes entre los embebidos. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="12" column="1" bodyfile="src/main.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8cpp_1add406ead2e8a07502c1cbda9ab3d5e2a" prot="public" static="no" mutable="no">
+        <type>mutex</type>
+        <definition>mutex m_cout</definition>
+        <argsstring></argsstring>
+        <name>m_cout</name>
+        <briefdescription>
+<para>Mutex para impresión en pantalla. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="13" column="1" bodyfile="src/main.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8cpp_1ab9c1ea4772f1bf8606c9c03d8fde8004" prot="public" static="no" mutable="no">
+        <type>queue&lt; string &gt;</type>
+        <definition>queue&lt;string&gt; q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <briefdescription>
+<para>Cola de los mensajes entre los embebidos. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="14" column="1" bodyfile="src/main.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8cpp_1a80eab92ea6acdf16c892f565e977b3ea" prot="public" static="no" mutable="no">
+        <type>mutex</type>
+        <definition>mutex m_queue_cam</definition>
+        <argsstring></argsstring>
+        <name>m_queue_cam</name>
+        <briefdescription>
+<para>Mutex para el manejo de mensajes en la cola de comuncacion Raspi-Camara. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="15" column="1" bodyfile="src/main.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8cpp_1a9d9d2d537b4b54b3811d19aa4ac462e1" prot="public" static="no" mutable="no">
+        <type>queue&lt; string &gt;</type>
+        <definition>queue&lt;string&gt; q_cam</definition>
+        <argsstring></argsstring>
+        <name>q_cam</name>
+        <briefdescription>
+<para>Cola de mensajes entre raspberry y camara. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="16" column="1" bodyfile="src/main.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1af8a13b4aeccb33617691498dadca25a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArduinoRTh</definition>
+        <argsstring>()</argsstring>
+        <name>ArduinoRTh</name>
+        <briefdescription>
+<para>Funcion que corre en el th del arduinoR. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="21" column="1" bodyfile="src/main.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a3718e281e59eea352be0e7aa1189207d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArduinoLTh</definition>
+        <argsstring>()</argsstring>
+        <name>ArduinoLTh</name>
+        <briefdescription>
+<para>Funcion que corre en el th del arduinoL. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="28" column="1" bodyfile="src/main.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1ab6d88677f2b0a88c66275ac97eaa1527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPITh</definition>
+        <argsstring>()</argsstring>
+        <name>RPITh</name>
+        <briefdescription>
+<para>Funcion que corre en el th de la raspberry. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="35" column="1" bodyfile="src/main.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1ace2c4f580f8a1badc288e911cbca18ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void quitTh</definition>
+        <argsstring>()</argsstring>
+        <name>quitTh</name>
+        <briefdescription>
+<para>Funcion que corre un thread para verificar si se presiona enter y terminar el programa. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="42" column="1" bodyfile="src/main.cpp" bodystart="42" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+<para>Bucle principal del programa. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="54" column="1" bodyfile="src/main.cpp" bodystart="54" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main.cpp"/>
+  </compounddef>
+</doxygen>

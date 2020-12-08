@@ -12,6 +12,5 @@ var searchData=
   ['ares',['aRes',['../classMPU9250.html#afa89af2772cead0f76a4ddd92ec5f6a8',1,'MPU9250']]],
   ['ax',['ax',['../classMPU9250.html#aea8a7622821bf8aca55fcef71d91e29f',1,'MPU9250']]],
   ['ay',['ay',['../classMPU9250.html#a5129e95dbe12544fa34cc53b5644ff71',1,'MPU9250']]],
-  ['az',['az',['../classMPU9250.html#a8ab7a335476e40a26aba80f867ac7da9',1,'MPU9250']]],
-  ['asdasda',['ASdasda',['../md_src_Readme.html',1,'']]]
+  ['az',['az',['../classMPU9250.html#a8ab7a335476e40a26aba80f867ac7da9',1,'MPU9250']]]
 ];

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classCamera" kind="class" language="C++" prot="public">
+    <compoundname>Camera</compoundname>
+    <basecompoundref refid="classEmbededSystem" prot="public" virt="non-virtual">EmbededSystem</basecompoundref>
+    <includes refid="robsim_8h" local="no">robsim.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCamera_1a1719371e1e57ad18abfa5dd3d971bb39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Camera::main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <reimplements refid="classEmbededSystem_1a3a333d4954af4068f5e97301b4f55c48">main</reimplements>
+        <briefdescription>
+<para>Funcion virtual pura que corre el main del SE. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="84" column="1" bodyfile="src/robsim.cpp" bodystart="137" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase que representa la camara El metodo main es el bucle infinito del SE. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="15">
+        <label>Camera</label>
+        <link refid="classCamera"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>EmbededSystem</label>
+        <link refid="classEmbededSystem"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>Camera</label>
+        <link refid="classCamera"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>EmbededSystem</label>
+        <link refid="classEmbededSystem"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/robsim.h" line="82" column="1" bodyfile="src/robsim.h" bodystart="82" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classCamera_1a1719371e1e57ad18abfa5dd3d971bb39" prot="public" virt="virtual"><scope>Camera</scope><name>main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="sensors_8h" kind="file" language="C++">
+    <compoundname>sensors.h</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes refid="utils_8h" local="yes">utils.h</includes>
+    <includedby refid="robsim_8h" local="yes">src/robsim.h</includedby>
+    <includedby refid="robsim_8cpp" local="yes">src/robsim.cpp</includedby>
+    <includedby refid="sensors_8cpp" local="yes">src/sensors.cpp</includedby>
+    <incdepgraph>
+      <node id="79">
+        <label>functional</label>
+      </node>
+      <node id="73">
+        <label>cstdint</label>
+      </node>
+      <node id="75">
+        <label>string</label>
+      </node>
+      <node id="72">
+        <label>src/sensors.h</label>
+        <link refid="sensors_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>condition_variable</label>
+      </node>
+      <node id="76">
+        <label>vector</label>
+      </node>
+      <node id="74">
+        <label>utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>mutex</label>
+      </node>
+      <node id="77">
+        <label>chrono</label>
+      </node>
+      <node id="78">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="82">
+        <label>src/sensors.h</label>
+        <link refid="sensors_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="83">
+        <label>src/robsim.h</label>
+        <link refid="robsim_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>src/robsim.cpp</label>
+        <link refid="robsim_8cpp"/>
+      </node>
+      <node id="86">
+        <label>src/sensors.cpp</label>
+        <link refid="sensors_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMPU9250" prot="public">MPU9250</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sensors.h"/>
+  </compounddef>
+</doxygen>

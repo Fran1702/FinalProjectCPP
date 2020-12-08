@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classMPU9250" kind="class" language="C++" prot="public">
+    <compoundname>MPU9250</compoundname>
+    <includes refid="sensors_8h" local="no">sensors.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMPU9250_1ab3d0117a094b81ac2e07f5c2d68aa5f4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::pitch</definition>
+        <argsstring></argsstring>
+        <name>pitch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="11" column="1" bodyfile="src/sensors.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a0493fbbf09cb14b8695a1eb804136e34" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::yaw</definition>
+        <argsstring></argsstring>
+        <name>yaw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="11" column="1" bodyfile="src/sensors.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1ad394d6659aa446adff547feaa4985f94" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::roll</definition>
+        <argsstring></argsstring>
+        <name>roll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="11" column="1" bodyfile="src/sensors.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a2190394242c2b74ff53c20f8180af287" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="12" column="1" bodyfile="src/sensors.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a8fa1b4fa4bc8db4bd162bc4f8ee8f0ea" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t MPU9250::tempCount</definition>
+        <argsstring></argsstring>
+        <name>tempCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="13" column="1" bodyfile="src/sensors.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a4d6b6338685120de2e21aa30d9d89389" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MPU9250::delt_t</definition>
+        <argsstring></argsstring>
+        <name>delt_t</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="14" column="1" bodyfile="src/sensors.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a9d231520d019ba7879c60ef7b72707a5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MPU9250::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="16" column="1" bodyfile="src/sensors.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a604d036ab632885152ab770b3c64676a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MPU9250::sumCount</definition>
+        <argsstring></argsstring>
+        <name>sumCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="16" column="1" bodyfile="src/sensors.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a1e53d31ab289b64a0d6393b17e8b807e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::deltat</definition>
+        <argsstring></argsstring>
+        <name>deltat</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="17" column="1" bodyfile="src/sensors.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1ac40db4e2fb94e9b33ec0b821c0b6ed2d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::sum</definition>
+        <argsstring></argsstring>
+        <name>sum</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="17" column="1" bodyfile="src/sensors.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1af60ee039dadb9eb5f4ade404ddfd878b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MPU9250::lastUpdate</definition>
+        <argsstring></argsstring>
+        <name>lastUpdate</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="18" column="1" bodyfile="src/sensors.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a4ea2c930abf4529a3888885f9d928cf4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MPU9250::firstUpdate</definition>
+        <argsstring></argsstring>
+        <name>firstUpdate</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="18" column="1" bodyfile="src/sensors.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a96b7d70d685ed53744c69acc9f7ef1af" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MPU9250::Now</definition>
+        <argsstring></argsstring>
+        <name>Now</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="19" column="1" bodyfile="src/sensors.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a14ab2e2ab741ca245007cb9a134e07f3" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t MPU9250::gyroCount[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>gyroCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="21" column="1" bodyfile="src/sensors.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1aff92db5334c43a72f5c2f1fc8ee6f596" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t MPU9250::magCount[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>magCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="22" column="1" bodyfile="src/sensors.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1afa89af2772cead0f76a4ddd92ec5f6a8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::aRes</definition>
+        <argsstring></argsstring>
+        <name>aRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="24" column="1" bodyfile="src/sensors.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a2c137b20138d3c80c4828691d5656d92" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::gRes</definition>
+        <argsstring></argsstring>
+        <name>gRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="24" column="1" bodyfile="src/sensors.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a173e0594b9d3ecb6ece2b71f9f59fc50" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::mRes</definition>
+        <argsstring></argsstring>
+        <name>mRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="24" column="1" bodyfile="src/sensors.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1aea8a7622821bf8aca55fcef71d91e29f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::ax</definition>
+        <argsstring></argsstring>
+        <name>ax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="26" column="1" bodyfile="src/sensors.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a5129e95dbe12544fa34cc53b5644ff71" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::ay</definition>
+        <argsstring></argsstring>
+        <name>ay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="26" column="1" bodyfile="src/sensors.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a8ab7a335476e40a26aba80f867ac7da9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::az</definition>
+        <argsstring></argsstring>
+        <name>az</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="26" column="1" bodyfile="src/sensors.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a59b6d7bd37738bac258da24ad330feef" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::gx</definition>
+        <argsstring></argsstring>
+        <name>gx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="26" column="1" bodyfile="src/sensors.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a126311c382d2667b7bc7cbe1f9b38b51" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::gy</definition>
+        <argsstring></argsstring>
+        <name>gy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="26" column="1" bodyfile="src/sensors.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a756658ca06a3807ef426ab87022a15c9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::gz</definition>
+        <argsstring></argsstring>
+        <name>gz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="26" column="1" bodyfile="src/sensors.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1aa4cc8b2c9417304d1106bdbd988ac607" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::mx</definition>
+        <argsstring></argsstring>
+        <name>mx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="26" column="1" bodyfile="src/sensors.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1ad7cf9fe3134d24f46705881b2e002f31" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::my</definition>
+        <argsstring></argsstring>
+        <name>my</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="26" column="1" bodyfile="src/sensors.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1af11072922aa71ffb125fe3786f848653" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::mz</definition>
+        <argsstring></argsstring>
+        <name>mz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="26" column="1" bodyfile="src/sensors.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a30d462461868e4f306c2f47d1adbd1d2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::factoryMagCalibration[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>factoryMagCalibration</name>
+        <initializer>= {0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="28" column="1" bodyfile="src/sensors.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1af34938d098b83ec910bee1b51a41972f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::factoryMagBias[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>factoryMagBias</name>
+        <initializer>= {0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="28" column="1" bodyfile="src/sensors.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a4fc2232b3fdbd61bc1024c86842ddf9a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::gyroBias[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>gyroBias</name>
+        <initializer>= {0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="30" column="1" bodyfile="src/sensors.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a7b0e6389baccd5592c95cae9d24d1317" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::accelBias[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>accelBias</name>
+        <initializer>= {0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="31" column="1" bodyfile="src/sensors.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a1f3b364d6efca22837dd944c60effce5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::magBias[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>magBias</name>
+        <initializer>= {0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="32" column="1" bodyfile="src/sensors.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1a09f641aa48a5c7228a6ea5034e0391c3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::magScale[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>magScale</name>
+        <initializer>= {0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="33" column="1" bodyfile="src/sensors.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1afd15093e18fc34ce15e526f464fc557a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU9250::selfTest[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>selfTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="34" column="1" bodyfile="src/sensors.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMPU9250_1adb56df6ceaf1dc204f97270540ac8b14" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t MPU9250::accelCount[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>accelCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="36" column="1" bodyfile="src/sensors.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMPU9250_1ab6b113da9b2fb006eb44dc8078e699c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::getMres</definition>
+        <argsstring>()</argsstring>
+        <name>getMres</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1afd804ec9bd68961fc0084af461104304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::getGres</definition>
+        <argsstring>()</argsstring>
+        <name>getGres</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a1c7dba3645913bf97f8b47d2bd4af2b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::getAres</definition>
+        <argsstring>()</argsstring>
+        <name>getAres</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a66dc74fdb59049f61e1e86e4b71aabac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::readAccelData</definition>
+        <argsstring>(int16_t *, vector&lt; vector&lt; double &gt;&gt;, int)</argsstring>
+        <name>readAccelData</name>
+        <param>
+          <type>int16_t *</type>
+          <defname>destination</defname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt;</type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="42" column="1" bodyfile="src/sensors.cpp" bodystart="9" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a7f0f6be23ed65146391cf91e4739ccc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::readGyroData</definition>
+        <argsstring>(int16_t *)</argsstring>
+        <name>readGyroData</name>
+        <param>
+          <type>int16_t *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a5d3589bd83a003da56546474dd9ca519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::readMagData</definition>
+        <argsstring>(int16_t *)</argsstring>
+        <name>readMagData</name>
+        <param>
+          <type>int16_t *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a3ab318a519e0f85a38d0e40d4bedc89f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t MPU9250::readTempData</definition>
+        <argsstring>()</argsstring>
+        <name>readTempData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a39e17cffe3de219d3f991b6476833e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::updateTime</definition>
+        <argsstring>()</argsstring>
+        <name>updateTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1aab7b6d912fdc88c4fedfad90abe2aeab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::initAK8963</definition>
+        <argsstring>(float *)</argsstring>
+        <name>initAK8963</name>
+        <param>
+          <type>float *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a03803202142ac461867daa9dd06fdd80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::initMPU9250</definition>
+        <argsstring>()</argsstring>
+        <name>initMPU9250</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1aeac1ae4402a4eb9a74bea5ad8af929c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::calibrateMPU9250</definition>
+        <argsstring>(float *gyroBias, float *accelBias)</argsstring>
+        <name>calibrateMPU9250</name>
+        <param>
+          <type>float *</type>
+          <declname>gyroBias</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>accelBias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1ad3bbdef687191a70354ee2f900352993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::MPU9250SelfTest</definition>
+        <argsstring>(float *destination)</argsstring>
+        <name>MPU9250SelfTest</name>
+        <param>
+          <type>float *</type>
+          <declname>destination</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1ad2ebbfb1d321b9c3312f4ae298214020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU9250::magCalMPU9250</definition>
+        <argsstring>(float *dest1, float *dest2)</argsstring>
+        <name>magCalMPU9250</name>
+        <param>
+          <type>float *</type>
+          <declname>dest1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>dest2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a136cd20820be776769c6214640c4130e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU9250::writeByte</definition>
+        <argsstring>(uint8_t, uint8_t, uint8_t)</argsstring>
+        <name>writeByte</name>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a846032e6a6d737f4ff62065ca0e1568f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU9250::readByte</definition>
+        <argsstring>(uint8_t, uint8_t)</argsstring>
+        <name>readByte</name>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a083e837c203b46e9af4a5900b731770f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU9250::readBytes</definition>
+        <argsstring>(uint8_t, uint8_t, uint8_t, uint8_t *)</argsstring>
+        <name>readBytes</name>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a9845d64636a0c0eb1a3ba99eb44ebdd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU9250::readBytesSPI</definition>
+        <argsstring>(uint8_t, uint8_t, uint8_t *)</argsstring>
+        <name>readBytesSPI</name>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a79ec9d87d525be62139a4d31d0538ba3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU9250::readBytesWire</definition>
+        <argsstring>(uint8_t, uint8_t, uint8_t, uint8_t *)</argsstring>
+        <name>readBytesWire</name>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMPU9250_1a59e39b2fef2bdb29197bcbd765ec5bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MPU9250::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sensors.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sensors.h" line="9" column="1" bodyfile="src/sensors.h" bodystart="8" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classMPU9250_1a7b0e6389baccd5592c95cae9d24d1317" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>accelBias</name></member>
+      <member refid="classMPU9250_1adb56df6ceaf1dc204f97270540ac8b14" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>accelCount</name></member>
+      <member refid="classMPU9250_1afa89af2772cead0f76a4ddd92ec5f6a8" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>aRes</name></member>
+      <member refid="classMPU9250_1aea8a7622821bf8aca55fcef71d91e29f" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>ax</name></member>
+      <member refid="classMPU9250_1a5129e95dbe12544fa34cc53b5644ff71" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>ay</name></member>
+      <member refid="classMPU9250_1a8ab7a335476e40a26aba80f867ac7da9" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>az</name></member>
+      <member refid="classMPU9250_1a59e39b2fef2bdb29197bcbd765ec5bae" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>begin</name></member>
+      <member refid="classMPU9250_1aeac1ae4402a4eb9a74bea5ad8af929c1" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>calibrateMPU9250</name></member>
+      <member refid="classMPU9250_1a9d231520d019ba7879c60ef7b72707a5" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>count</name></member>
+      <member refid="classMPU9250_1a4d6b6338685120de2e21aa30d9d89389" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>delt_t</name></member>
+      <member refid="classMPU9250_1a1e53d31ab289b64a0d6393b17e8b807e" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>deltat</name></member>
+      <member refid="classMPU9250_1af34938d098b83ec910bee1b51a41972f" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>factoryMagBias</name></member>
+      <member refid="classMPU9250_1a30d462461868e4f306c2f47d1adbd1d2" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>factoryMagCalibration</name></member>
+      <member refid="classMPU9250_1a4ea2c930abf4529a3888885f9d928cf4" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>firstUpdate</name></member>
+      <member refid="classMPU9250_1a1c7dba3645913bf97f8b47d2bd4af2b0" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>getAres</name></member>
+      <member refid="classMPU9250_1afd804ec9bd68961fc0084af461104304" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>getGres</name></member>
+      <member refid="classMPU9250_1ab6b113da9b2fb006eb44dc8078e699c5" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>getMres</name></member>
+      <member refid="classMPU9250_1a2c137b20138d3c80c4828691d5656d92" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>gRes</name></member>
+      <member refid="classMPU9250_1a59b6d7bd37738bac258da24ad330feef" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>gx</name></member>
+      <member refid="classMPU9250_1a126311c382d2667b7bc7cbe1f9b38b51" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>gy</name></member>
+      <member refid="classMPU9250_1a4fc2232b3fdbd61bc1024c86842ddf9a" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>gyroBias</name></member>
+      <member refid="classMPU9250_1a14ab2e2ab741ca245007cb9a134e07f3" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>gyroCount</name></member>
+      <member refid="classMPU9250_1a756658ca06a3807ef426ab87022a15c9" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>gz</name></member>
+      <member refid="classMPU9250_1aab7b6d912fdc88c4fedfad90abe2aeab" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>initAK8963</name></member>
+      <member refid="classMPU9250_1a03803202142ac461867daa9dd06fdd80" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>initMPU9250</name></member>
+      <member refid="classMPU9250_1af60ee039dadb9eb5f4ade404ddfd878b" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>lastUpdate</name></member>
+      <member refid="classMPU9250_1a1f3b364d6efca22837dd944c60effce5" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>magBias</name></member>
+      <member refid="classMPU9250_1ad2ebbfb1d321b9c3312f4ae298214020" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>magCalMPU9250</name></member>
+      <member refid="classMPU9250_1aff92db5334c43a72f5c2f1fc8ee6f596" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>magCount</name></member>
+      <member refid="classMPU9250_1a09f641aa48a5c7228a6ea5034e0391c3" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>magScale</name></member>
+      <member refid="classMPU9250_1ad3bbdef687191a70354ee2f900352993" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>MPU9250SelfTest</name></member>
+      <member refid="classMPU9250_1a173e0594b9d3ecb6ece2b71f9f59fc50" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>mRes</name></member>
+      <member refid="classMPU9250_1aa4cc8b2c9417304d1106bdbd988ac607" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>mx</name></member>
+      <member refid="classMPU9250_1ad7cf9fe3134d24f46705881b2e002f31" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>my</name></member>
+      <member refid="classMPU9250_1af11072922aa71ffb125fe3786f848653" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>mz</name></member>
+      <member refid="classMPU9250_1a96b7d70d685ed53744c69acc9f7ef1af" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>Now</name></member>
+      <member refid="classMPU9250_1ab3d0117a094b81ac2e07f5c2d68aa5f4" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>pitch</name></member>
+      <member refid="classMPU9250_1a66dc74fdb59049f61e1e86e4b71aabac" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>readAccelData</name></member>
+      <member refid="classMPU9250_1a846032e6a6d737f4ff62065ca0e1568f" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>readByte</name></member>
+      <member refid="classMPU9250_1a083e837c203b46e9af4a5900b731770f" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>readBytes</name></member>
+      <member refid="classMPU9250_1a9845d64636a0c0eb1a3ba99eb44ebdd4" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>readBytesSPI</name></member>
+      <member refid="classMPU9250_1a79ec9d87d525be62139a4d31d0538ba3" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>readBytesWire</name></member>
+      <member refid="classMPU9250_1a7f0f6be23ed65146391cf91e4739ccc0" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>readGyroData</name></member>
+      <member refid="classMPU9250_1a5d3589bd83a003da56546474dd9ca519" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>readMagData</name></member>
+      <member refid="classMPU9250_1a3ab318a519e0f85a38d0e40d4bedc89f" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>readTempData</name></member>
+      <member refid="classMPU9250_1ad394d6659aa446adff547feaa4985f94" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>roll</name></member>
+      <member refid="classMPU9250_1afd15093e18fc34ce15e526f464fc557a" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>selfTest</name></member>
+      <member refid="classMPU9250_1ac40db4e2fb94e9b33ec0b821c0b6ed2d" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>sum</name></member>
+      <member refid="classMPU9250_1a604d036ab632885152ab770b3c64676a" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>sumCount</name></member>
+      <member refid="classMPU9250_1a8fa1b4fa4bc8db4bd162bc4f8ee8f0ea" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>tempCount</name></member>
+      <member refid="classMPU9250_1a2190394242c2b74ff53c20f8180af287" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>temperature</name></member>
+      <member refid="classMPU9250_1a39e17cffe3de219d3f991b6476833e40" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>updateTime</name></member>
+      <member refid="classMPU9250_1a136cd20820be776769c6214640c4130e" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>writeByte</name></member>
+      <member refid="classMPU9250_1a0493fbbf09cb14b8695a1eb804136e34" prot="public" virt="non-virtual"><scope>MPU9250</scope><name>yaw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

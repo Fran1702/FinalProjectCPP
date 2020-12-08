@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classActionMsg" kind="class" language="C++" prot="public">
+    <compoundname>ActionMsg</compoundname>
+    <basecompoundref refid="classMessage" prot="public" virt="non-virtual">Message</basecompoundref>
+    <includes refid="robsim_8h" local="no">robsim.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classActionMsg_1ab22c6cee704bd1ee2dbcbf54dd16cc4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ActionMsg::ActionMsg</definition>
+        <argsstring>()</argsstring>
+        <name>ActionMsg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="175" column="1" bodyfile="src/robsim.cpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase mensaje de accion de control. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>ActionMsg</label>
+        <link refid="classActionMsg"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Message</label>
+        <link refid="classMessage"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ActionMsg</label>
+        <link refid="classActionMsg"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Message</label>
+        <link refid="classMessage"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/robsim.h" line="173" column="1" bodyfile="src/robsim.h" bodystart="173" bodyend="177"/>
+    <listofallmembers>
+      <member refid="classActionMsg_1ab22c6cee704bd1ee2dbcbf54dd16cc4c" prot="public" virt="non-virtual"><scope>ActionMsg</scope><name>ActionMsg</name></member>
+      <member refid="classMessage_1a503349764ac9e059395381da69375b5b" prot="public" virt="non-virtual"><scope>ActionMsg</scope><name>delete_msg</name></member>
+      <member refid="classMessage_1a2d91ea6e9b207fac52a616c60a5664a8" prot="public" virt="non-virtual"><scope>ActionMsg</scope><name>getType</name></member>
+      <member refid="classMessage_1aa42afac737625598fc895414fbb2e332" prot="public" virt="non-virtual"><scope>ActionMsg</scope><name>Message</name></member>
+      <member refid="classMessage_1a4fc4f717b634e66070366cb7722d7761" prot="public" virt="non-virtual"><scope>ActionMsg</scope><name>Message</name></member>
+      <member refid="classMessage_1accae179a21fb486b5e830edf36f5cffc" prot="public" virt="non-virtual"><scope>ActionMsg</scope><name>print_msg</name></member>
+      <member refid="classMessage_1a861344493c976ef1de90df8b464f36af" prot="public" virt="non-virtual"><scope>ActionMsg</scope><name>send_msg</name></member>
+      <member refid="classMessage_1acaa0b0c246dfbdd5c929911b27752b5c" prot="public" virt="non-virtual"><scope>ActionMsg</scope><name>setType</name></member>
+      <member refid="classMessage_1a1c65ab3f02ba5b175f583f9d275ecf2b" prot="public" virt="non-virtual"><scope>ActionMsg</scope><name>Type</name></member>
+      <member refid="classMessage_1a9da1640bba6e0b0f63752f1927662ada" prot="public" virt="non-virtual"><scope>ActionMsg</scope><name>write_msg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

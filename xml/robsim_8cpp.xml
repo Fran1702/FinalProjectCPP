@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="robsim_8cpp" kind="file" language="C++">
+    <compoundname>robsim.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">atomic</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="sensors_8h" local="yes">sensors.h</includes>
+    <includes refid="robsim_8h" local="yes">robsim.h</includes>
+    <includes refid="utils_8h" local="yes">utils.h</includes>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+    <incdepgraph>
+      <node id="28">
+        <label>atomic</label>
+      </node>
+      <node id="35">
+        <label>functional</label>
+      </node>
+      <node id="27">
+        <label>iomanip</label>
+      </node>
+      <node id="23">
+        <label>queue</label>
+      </node>
+      <node id="31">
+        <label>cstdint</label>
+      </node>
+      <node id="29">
+        <label>cmath</label>
+      </node>
+      <node id="33">
+        <label>string</label>
+      </node>
+      <node id="30">
+        <label>sensors.h</label>
+        <link refid="sensors_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>robsim.h</label>
+        <link refid="robsim_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>condition_variable</label>
+      </node>
+      <node id="26">
+        <label>vector</label>
+      </node>
+      <node id="32">
+        <label>utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>sys/time.h</label>
+      </node>
+      <node id="22">
+        <label>iostream</label>
+      </node>
+      <node id="21">
+        <label>src/robsim.cpp</label>
+        <link refid="robsim_8cpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>mutex</label>
+      </node>
+      <node id="34">
+        <label>chrono</label>
+      </node>
+      <node id="25">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="robsim_8cpp_1a7ac2ec469c5986de6309d55a49dece55" prot="public" static="no">
+        <name>SAMPLE_TIME_ARDUINO</name>
+        <initializer>0.1;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.cpp" line="18" column="9" bodyfile="src/robsim.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="robsim_8cpp_1a19199de75b4f4eb26cb503afea095e91" prot="public" static="no">
+        <name>SAMPLE_TIME_CAMERA</name>
+        <initializer>0.1;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.cpp" line="19" column="9" bodyfile="src/robsim.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="robsim_8cpp_1acc46c880b139b5895f6a8236b3aff526" prot="public" static="no">
+        <name>SAMPLE_TIME_RASPI</name>
+        <initializer>0.1;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.cpp" line="20" column="9" bodyfile="src/robsim.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="robsim_8cpp_1abfd055405fc0db9a96a29057436d7e6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int time_falt_next_interv_ms</definition>
+        <argsstring>(struct timeval *t0, int n, double dt)</argsstring>
+        <name>time_falt_next_interv_ms</name>
+        <param>
+          <type>struct timeval *</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+<para>Calcula el tiempo faltante para el siguiente intervalo. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*t0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>puntero a timeval con el tiempo incial del experimento </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de intervalor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>paso de tiempo</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Tiempo en ms hasta el intervalo n </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.cpp" line="25" column="1" bodyfile="src/robsim.cpp" bodystart="25" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="robsim_8cpp_1ae9bdf1cf8a02cfad30e904f75ede4f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void espera_siguiente_intervalo</definition>
+        <argsstring>(struct timeval *t0, int n, double dt)</argsstring>
+        <name>espera_siguiente_intervalo</name>
+        <param>
+          <type>struct timeval *</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+<para>Función bloqueante que espera hasta el siguiente intervalor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*t0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>puntero a timeval con el tiempo incial del experimento </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de intervalo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>paso de tiempo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.cpp" line="34" column="1" bodyfile="src/robsim.cpp" bodystart="34" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="robsim_8cpp_1a40a893993ca0fba530429f44aa0b176f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void f</definition>
+        <argsstring>(bool *flag)</argsstring>
+        <name>f</name>
+        <param>
+          <type>bool *</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.cpp" line="209" column="1" bodyfile="src/robsim.cpp" bodystart="209" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="robsim_8cpp_1a075142c6dceedf39581a5038d5c9edf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CamTh</definition>
+        <argsstring>()</argsstring>
+        <name>CamTh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.cpp" line="286" column="1" bodyfile="src/robsim.cpp" bodystart="286" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/robsim.cpp"/>
+  </compounddef>
+</doxygen>

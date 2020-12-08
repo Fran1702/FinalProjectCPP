@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="utils_8h" kind="file" language="C++">
+    <compoundname>utils.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">condition_variable</includes>
+    <includedby refid="sensors_8h" local="yes">src/sensors.h</includedby>
+    <includedby refid="robsim_8cpp" local="yes">src/robsim.cpp</includedby>
+    <includedby refid="utils_8cpp" local="yes">src/utils.cpp</includedby>
+    <incdepgraph>
+      <node id="112">
+        <label>functional</label>
+      </node>
+      <node id="108">
+        <label>string</label>
+      </node>
+      <node id="114">
+        <label>condition_variable</label>
+      </node>
+      <node id="109">
+        <label>vector</label>
+      </node>
+      <node id="107">
+        <label>src/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>mutex</label>
+      </node>
+      <node id="110">
+        <label>chrono</label>
+      </node>
+      <node id="111">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="116">
+        <label>src/sensors.h</label>
+        <link refid="sensors_8h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="117">
+        <label>src/robsim.h</label>
+        <link refid="robsim_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>src/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>src/robsim.cpp</label>
+        <link refid="robsim_8cpp"/>
+      </node>
+      <node id="120">
+        <label>src/sensors.cpp</label>
+        <link refid="sensors_8cpp"/>
+      </node>
+      <node id="121">
+        <label>src/utils.cpp</label>
+        <link refid="utils_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="utils_8h_1ac0e2b53a3ea9ebce1dacd9413579ec69" prot="public" static="no">
+        <name>MSG_DELIMITER</name>
+        <initializer>&quot;:&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.h" line="16" column="9" bodyfile="src/utils.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utils_8h_1af392d7ee4f29a6a09970819dbd725c20" prot="public" static="no">
+        <name>MSG_IMU</name>
+        <initializer>&quot;msg_IMU&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.h" line="17" column="9" bodyfile="src/utils.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utils_8h_1a341cff82fa08399b66ed950cd301ffb6" prot="public" static="no">
+        <name>MSG_CAM</name>
+        <initializer>&quot;msg_CAM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.h" line="18" column="9" bodyfile="src/utils.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utils_8h_1a43ca248958b3afe7f7c898a9e62b5a9c" prot="public" static="no">
+        <name>MSG_BOM</name>
+        <initializer>&quot;msg_BOM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.h" line="19" column="9" bodyfile="src/utils.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utils_8h_1abf71abaffc4210c79acd651db9db90f8" prot="public" static="no">
+        <name>MSG_LAS</name>
+        <initializer>&quot;msg_LAS&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.h" line="20" column="9" bodyfile="src/utils.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="utils_8h_1ac026bb3b390444587a444a6b62655867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; Read_CSV_IMU_CAM</definition>
+        <argsstring>(string inputFileName)</argsstring>
+        <name>Read_CSV_IMU_CAM</name>
+        <param>
+          <type>string</type>
+          <declname>inputFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.h" line="24" column="1" bodyfile="src/utils.cpp" bodystart="44" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8h_1ae1f0b848799389e13cbdedd8a79bde42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string decode_msg</definition>
+        <argsstring>(string s, double v[3])</argsstring>
+        <name>decode_msg</name>
+        <param>
+          <type>string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.h" line="26" column="1" bodyfile="src/utils.cpp" bodystart="85" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8h_1a94789c6523de64a6dda7f9b290bbd522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_initMenu</definition>
+        <argsstring>(void)</argsstring>
+        <name>print_initMenu</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.h" line="27" column="1" bodyfile="src/utils.cpp" bodystart="26" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="utils_8h_1a1263999c182e68e204b84696cd247caa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_endMenu</definition>
+        <argsstring>(void)</argsstring>
+        <name>print_endMenu</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils.h" line="28" column="1" bodyfile="src/utils.cpp" bodystart="13" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/utils.h"/>
+  </compounddef>
+</doxygen>

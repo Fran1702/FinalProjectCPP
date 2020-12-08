@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classEmbededSystem" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>EmbededSystem</compoundname>
+    <derivedcompoundref refid="classArduinoL" prot="public" virt="non-virtual">ArduinoL</derivedcompoundref>
+    <derivedcompoundref refid="classArduinoR" prot="public" virt="non-virtual">ArduinoR</derivedcompoundref>
+    <derivedcompoundref refid="classCamera" prot="public" virt="non-virtual">Camera</derivedcompoundref>
+    <derivedcompoundref refid="classRaspi" prot="public" virt="non-virtual">Raspi</derivedcompoundref>
+    <includes refid="robsim_8h" local="no">robsim.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEmbededSystem_1a3a333d4954af4068f5e97301b4f55c48" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void EmbededSystem::main</definition>
+        <argsstring>()=0</argsstring>
+        <name>main</name>
+        <reimplementedby refid="classArduinoR_1a479b06fd9527e9810b37b91da8fb0f7e">main</reimplementedby>
+        <reimplementedby refid="classArduinoL_1a27a3e0f5bfbf48f558bce2d31a72d502">main</reimplementedby>
+        <reimplementedby refid="classRaspi_1adce86197732891370a63b239cc413c7e">main</reimplementedby>
+        <reimplementedby refid="classCamera_1a1719371e1e57ad18abfa5dd3d971bb39">main</reimplementedby>
+        <briefdescription>
+<para>Funcion virtual pura que corre el main del SE. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a Clase base Sistema embebido Tiene como metodo virtual puro el main de los SE </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="30">
+        <label>Camera</label>
+        <link refid="classCamera"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>EmbededSystem</label>
+        <link refid="classEmbededSystem"/>
+      </node>
+      <node id="31">
+        <label>Raspi</label>
+        <link refid="classRaspi"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>ArduinoL</label>
+        <link refid="classArduinoL"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>ArduinoR</label>
+        <link refid="classArduinoR"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/robsim.h" line="44" column="1" bodyfile="src/robsim.h" bodystart="44" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classEmbededSystem_1a3a333d4954af4068f5e97301b4f55c48" prot="public" virt="pure-virtual"><scope>EmbededSystem</scope><name>main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

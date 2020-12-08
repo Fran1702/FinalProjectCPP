@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Simulador Sistemas Embebidos Robotino</title>
+    <detaileddescription>
+<para>Esta es la documentación del proyecto final de la catedra de Programación Orientada a Objetos en C++.</para><para><heading level="2">Objetivos</heading>
+</para><para><image type="html" name="Finalc++.png"></image>
+</para><para>El objetivo es simular la comunicación de 2 arduinos y una raspberry. Para esto se utilizan la siguiente estructura de disparo de threads:<itemizedlist>
+<listitem><para>Main<itemizedlist>
+<listitem><para>Arduino R: Main</para></listitem><listitem><para>Arduino L: Main</para></listitem><listitem><para>Raspberry Pi<itemizedlist>
+<listitem><para>Main</para></listitem><listitem><para>Camara</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para><heading level="2">Comunicaciones</heading>
+</para><para>Para simular la comunicación utilizo una QUEUE con strings como elementos donde voy metiendo los mensajes que quiero mandar a otros dispositivos, y el otro dispositivo lee si le corresponde y si le corresponde lo pop, sino no hace nada.</para><para>Una queue es para la simulación entre los arduinos y la raspberry y otra queue par ala comunicación dentro de la raspberry con la camara.</para><para><heading level="2">Envio de datos</heading>
+</para><para>A continuación se muestra la estructura de los mensajes de cada dispositivo. <heading level="3">IMU</heading>
+</para><para>!DAT:IMU:xxxx:yyyy:zzzz:#</para><para><heading level="3">CAMERA</heading>
+</para><para>!DAT:CAM:xxxx:yyyy:zzzz:#</para><para><heading level="3">LASER</heading>
+</para><para>!DAT:LAS:xxxx:# </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

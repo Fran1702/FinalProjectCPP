@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classArduinoR" kind="class" language="C++" prot="public">
+    <compoundname>ArduinoR</compoundname>
+    <basecompoundref refid="classEmbededSystem" prot="public" virt="non-virtual">EmbededSystem</basecompoundref>
+    <includes refid="robsim_8h" local="no">robsim.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classArduinoR_1a479b06fd9527e9810b37b91da8fb0f7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ArduinoR::main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <reimplements refid="classEmbededSystem_1a3a333d4954af4068f5e97301b4f55c48">main</reimplements>
+        <briefdescription>
+<para>Funcion virtual pura que corre el main del SE. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="57" column="1" bodyfile="src/robsim.cpp" bodystart="213" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classArduinoR_1a8365ffa8bde5c67337aa9b31fe08f83f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ArduinoR::readIMU</definition>
+        <argsstring>()</argsstring>
+        <name>readIMU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/robsim.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase que representa el Arduino dedicado al sistema 1 El metodo main es el bucle infinito del SE Hereda de la clase Sistema Embebido. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>EmbededSystem</label>
+        <link refid="classEmbededSystem"/>
+      </node>
+      <node id="11">
+        <label>ArduinoR</label>
+        <link refid="classArduinoR"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>EmbededSystem</label>
+        <link refid="classEmbededSystem"/>
+      </node>
+      <node id="13">
+        <label>ArduinoR</label>
+        <link refid="classArduinoR"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/robsim.h" line="55" column="1" bodyfile="src/robsim.h" bodystart="55" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classArduinoR_1a479b06fd9527e9810b37b91da8fb0f7e" prot="public" virt="virtual"><scope>ArduinoR</scope><name>main</name></member>
+      <member refid="classArduinoR_1a8365ffa8bde5c67337aa9b31fe08f83f" prot="public" virt="non-virtual"><scope>ArduinoR</scope><name>readIMU</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
