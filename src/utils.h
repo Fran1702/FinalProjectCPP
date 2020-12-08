@@ -11,8 +11,6 @@
 #include <mutex>
 #include <condition_variable>
 
-//#include <sstream> // std::stringstream
-//#include <iostream>
 #define MSG_DELIMITER ":" 
 #define MSG_IMU "msg_IMU"
 #define MSG_CAM "msg_CAM"

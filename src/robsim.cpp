@@ -3,10 +3,8 @@
 #include <queue>
 #include <mutex>
 #include <thread>
-//#include <fstream>
 #include <vector>
 #include <iomanip>
-//#include <ctime>
 #include <atomic>
 #include <cmath>
 
@@ -43,7 +41,6 @@ void espera_siguiente_intervalo(struct timeval *t0,int n, double dt){
 		ts.tv_nsec = (t_es-ts.tv_sec)*1e9;
 		nanosleep(&ts,NULL);
 	}
-//	return t_es;
 }
 
 /*
@@ -51,7 +48,6 @@ void espera_siguiente_intervalo(struct timeval *t0,int n, double dt){
  */ 
 
 void Message::send_msg(queue <string>& q){
-	// --- Parte mutex
 	switch(type){
 		case MSG_TELEMETRY:
 		{		
@@ -152,8 +148,6 @@ void Camera::main(){
 	gettimeofday(&t0,NULL);
 	while(!quit_now){
 		gettimeofday(&ti,NULL);
-	//	cout << "CAM: "<< x << endl;
-	// --------------------- ACA EL CODIGO
 		// Escribo el mensaje con los datos de la IMU
 		camX = data[i][0]*200; camY = data[i][1]*200; camZ = data[i][2]*200;	
 		msg_CAM.write_pos(camX,camY,camZ);
@@ -249,8 +243,6 @@ void ArduinoR::main(){
 			// Escribo el mensaje con los datos de la IMU
 			msg_IMU.write_IMU(IMU.ax,IMU.ay,IMU.az);
 
-			// Printeo msg para ver q ta bien
-			//msg_IMU.print_msg();
 			msg_IMU.send_msg(q);
 			msg_IMU.delete_msg();
 			flag_IMU_MSG = false;
@@ -306,7 +298,7 @@ void Raspi::main(){
 	for(int i=0;i<78;i++)cout<<"-";
 	cout << "|" << endl;
 	lck_cout.unlock();
-// ---- pal th de la camara
+// ---- disparo el th de la camara
 	thread CAM(CamTh);
 
 
@@ -322,10 +314,10 @@ void Raspi::main(){
 		// Reviso si la queue de ard tiene un msg
 		unique_lock<mutex> lck_embeded(m_queue); // Agarro mutex EMBEDED
 		if(!q.empty()) {
-			// Tengo medicion de IMU, pongo el flag a true
 			double v[3];
 			t = decode_msg(q.front(),v);
 			if(t==MSG_IMU){
+			// Tengo medicion de IMU, pongo el flag a true
 				flag_IMU = true;
 			       	a_IMU[0] = v[0]; a_IMU[1] = v[1]; a_IMU[2] = v[2];
 				q.pop();
@@ -342,10 +334,10 @@ void Raspi::main(){
 		unique_lock<mutex> lck_cam(m_queue_cam); // Agarro mutex CAMARA
 		if(!q_cam.empty()) {
 			// Tengo medicion de camara, pongo el flag a true
-			flag_CAM = true;
 			double v[3];
 			t = decode_msg(q_cam.front(),v);
 			if(t==MSG_CAM){
+				flag_CAM = true;
 			       	p_CAM[0] = v[0]; p_CAM[1] = v[1]; p_CAM[2] = v[2];
 				q_cam.pop();
 			}
@@ -380,8 +372,6 @@ void Raspi::main(){
 			//cout << p_estimada[0] << endl;
 			msg_JetPump.write_msg(to_string((int) round(p_estimada[0])));
 			msg_JetPump.write_msg("#");
-			// Printeo msg para ver q ta bien
-			//msg_JetPump.print_msg();
 			msg_JetPump.send_msg(q);
 			msg_JetPump.delete_msg();
 
