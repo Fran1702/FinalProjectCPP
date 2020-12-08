@@ -1,41 +1,43 @@
-Esta es la documentación del proyecto final de la catedra de Programación Orientada a Objetos en C++.
-
-\subsection*{Objetivos}
-
+\hypertarget{index_autotoc_md0}{}\section{Overview}\label{index_autotoc_md0}
+Esta es la documentación del proyecto final de la catedra de Programación Orientada a Objetos en C++.\hypertarget{index_autotoc_md1}{}\section{Objetivos}\label{index_autotoc_md1}
 
 
-El objetivo es simular la comunicación de 2 arduinos y una raspberry. Ademas, en la raspberry hay un thread corriendo que representa a una camara y envia datos de posición a la raspberry.
+El objetivo es simular la comunicación de 2 arduinos y una raspberry. Ademas, en la raspberry hay un thread corriendo que representa a una camara y envia datos de posición a la raspberry.\hypertarget{index_autotoc_md2}{}\section{Caracteristicas de los SE}\label{index_autotoc_md2}
+\hypertarget{index_autotoc_md3}{}\subsection{Raspberry}\label{index_autotoc_md3}
 
-\subsection*{Esquema del programa}
-
-Para esto se utilizan la siguiente estructura de disparo de threads\+:
 \begin{DoxyItemize}
-\item Main
+\item Intercambia mensajes con los Arduinos\+: Recibe mediciones de I\+MU y sensor de distancia y envia seteo de la bomba de agua.
+\item Recibe datos del thread de la camara
+\end{DoxyItemize}\hypertarget{index_autotoc_md4}{}\subsection{Arduino R}\label{index_autotoc_md4}
+
 \begin{DoxyItemize}
-\item Arduino R\+: Corre el programa princiapl del Arduino R. En el se toman datos de una I\+MU y se envian a la raspberry. Ademas se leen mensajes que provienen de la raspberry para setear actuadores.
-\item Arduino L\+: Corre el programa principal del Arduino L. En el mismo se toman datos de un sensor de distancia y se envian a la raspberry
-\item Raspberry Pi
+\item Posee una I\+MU que mide aceleraciones en 3 ejes
+\item Tiene conectada una bomba de agua a la cual se le setea la tensión
+\end{DoxyItemize}\hypertarget{index_autotoc_md5}{}\subsection{Arduino L}\label{index_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Tiene un sensor de posición laser
+\end{DoxyItemize}\hypertarget{index_autotoc_md6}{}\section{Esquema del programa}\label{index_autotoc_md6}
+El programa principal es el archivo \hyperlink{main_8cpp}{main.\+cpp}, donde se disparan los siguientes threads\+:
+\begin{DoxyItemize}
+\item AR\+: Corre el programa princiapl del Arduino R. En el se toman datos de una I\+MU y se envian a la raspberry. Ademas se leen mensajes que provienen de la raspberry para setear actuadores.
+\item AL\+: Corre el programa principal del Arduino L. En el mismo se toman datos de un sensor de distancia y se envian a la raspberry
+\item R\+PI\+: Corre el thread de la raspberry pi, dentro del cual se corren lo siguientes threads\+:
 \begin{DoxyItemize}
 \item Main\+: Corre el programa principal de la raspi, en el mismo se leen datos que provienen de los arduinos y se envian datos para setear los actuadores.
 \item Camara\+: Lee datos de posición de la camara y los envia al programa principal de la raspi
 \end{DoxyItemize}
+\item Quit\+: Revisa si el usuario quiere terminar la simulacion (enter) en caso de querer terminar cierra todos los threads.
 \end{DoxyItemize}
-\end{DoxyItemize}
 
-Para la generación de los datos de la I\+MU y la camara se leen archivos .txt con los datos de aceleración y posición. En el caso del sensor de distancia, se generan numeros aleatorios para representar la posición medida.
-
-\subsection*{Comunicaciones}
-
+Para la generación de los datos de la I\+MU y la camara se leen archivos .txt con los datos de aceleración y posición. En el caso del sensor de distancia, se generan numeros aleatorios para representar la posición medida.\hypertarget{index_autotoc_md7}{}\section{Comunicaciones}\label{index_autotoc_md7}
 Para simular la comunicación utilizo queue con strings como elementos donde voy metiendo los mensajes que quiero mandar a otros dispositivos, y el otro dispositivo lee si le corresponde y si le corresponde lo pop, sino no hace nada.
 
 Las siguientes queue se utilizan\+:
 \begin{DoxyItemize}
 \item queue 1\+: Comunicación entre los arduinos y raspi
 \item queue 2\+: Comunicación entre la raspi y la camara
-\end{DoxyItemize}
-
-\subsection*{Envio de datos}
-
+\end{DoxyItemize}\hypertarget{index_autotoc_md8}{}\subsection{Envio de datos}\label{index_autotoc_md8}
 A continuación se muestra la estructura de los mensajes de cada dispositivo. \subsubsection*{I\+MU}
 
 !\+D\+AT\+:I\+M\+U\+:xxxx\+:yyyy\+:zzzz\+:\#

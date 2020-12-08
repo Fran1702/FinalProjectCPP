@@ -1,7 +1,19 @@
 var NAVTREE =
 [
   [ "Simulador SE", "index.html", [
-    [ "Simulador Sistemas Embebidos Robotino", "index.html", null ],
+    [ "Simulador Sistemas Embebidos: Documentación", "index.html", [
+      [ "Overview", "index.html#autotoc_md0", null ],
+      [ "Objetivos", "index.html#autotoc_md1", null ],
+      [ "Caracteristicas de los SE", "index.html#autotoc_md2", [
+        [ "Raspberry", "index.html#autotoc_md3", null ],
+        [ "Arduino R", "index.html#autotoc_md4", null ],
+        [ "Arduino L", "index.html#autotoc_md5", null ]
+      ] ],
+      [ "Esquema del programa", "index.html#autotoc_md6", null ],
+      [ "Comunicaciones", "index.html#autotoc_md7", [
+        [ "Envio de datos", "index.html#autotoc_md8", null ]
+      ] ]
+    ] ],
     [ "Readme", "md_src_Readme.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

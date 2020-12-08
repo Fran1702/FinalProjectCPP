@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Simulador SE: Simulador Sistemas Embebidos Robotino</title>
+<title>Simulador SE: Simulador Sistemas Embebidos: Documentación</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,36 +80,73 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Simulador Sistemas Embebidos Robotino </div>  </div>
+<div class="title">Simulador Sistemas Embebidos: Documentación </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Esta es la documentación del proyecto final de la catedra de Programación Orientada a Objetos en C++.</p>
-<h2>Objetivos</h2>
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#autotoc_md0">Overview</a></li>
+<li class="level1"><a href="#autotoc_md1">Objetivos</a></li>
+<li class="level1"><a href="#autotoc_md2">Caracteristicas de los SE</a><ul><li class="level2"><a href="#autotoc_md3">Raspberry</a></li>
+<li class="level2"><a href="#autotoc_md4">Arduino R</a></li>
+<li class="level2"><a href="#autotoc_md5">Arduino L</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#autotoc_md6">Esquema del programa</a></li>
+<li class="level1"><a href="#autotoc_md7">Comunicaciones</a><ul><li class="level2"><a href="#autotoc_md8">Envio de datos</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md0"></a>
+Overview</h1>
+<p>Esta es la documentación del proyecto final de la catedra de Programación Orientada a Objetos en C++.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Objetivos</h1>
 <div class="image">
 <img src="../img/Finalc++.png" alt="Caption text"/>
 </div>
 <p>El objetivo es simular la comunicación de 2 arduinos y una raspberry. Ademas, en la raspberry hay un thread corriendo que representa a una camara y envia datos de posición a la raspberry.</p>
-<h2>Esquema del programa</h2>
-<p>Para esto se utilizan la siguiente estructura de disparo de threads:</p><ul>
-<li>Main<ul>
-<li>Arduino R: Corre el programa princiapl del Arduino R. En el se toman datos de una IMU y se envian a la raspberry. Ademas se leen mensajes que provienen de la raspberry para setear actuadores.</li>
-<li>Arduino L: Corre el programa principal del Arduino L. En el mismo se toman datos de un sensor de distancia y se envian a la raspberry</li>
-<li>Raspberry Pi<ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Caracteristicas de los SE</h1>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Raspberry</h2>
+<ul>
+<li>Intercambia mensajes con los Arduinos: Recibe mediciones de IMU y sensor de distancia y envia seteo de la bomba de agua.</li>
+<li>Recibe datos del thread de la camara</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Arduino R</h2>
+<ul>
+<li>Posee una IMU que mide aceleraciones en 3 ejes</li>
+<li>Tiene conectada una bomba de agua a la cual se le setea la tensión</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Arduino L</h2>
+<ul>
+<li>Tiene un sensor de posición laser</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Esquema del programa</h1>
+<p>El programa principal es el archivo <a class="el" href="main_8cpp.html">main.cpp</a>, donde se disparan los siguientes threads:</p><ul>
+<li>AR: Corre el programa princiapl del Arduino R. En el se toman datos de una IMU y se envian a la raspberry. Ademas se leen mensajes que provienen de la raspberry para setear actuadores.</li>
+<li>AL: Corre el programa principal del Arduino L. En el mismo se toman datos de un sensor de distancia y se envian a la raspberry</li>
+<li>RPI: Corre el thread de la raspberry pi, dentro del cual se corren lo siguientes threads:<ul>
 <li>Main: Corre el programa principal de la raspi, en el mismo se leen datos que provienen de los arduinos y se envian datos para setear los actuadores.</li>
 <li>Camara: Lee datos de posición de la camara y los envia al programa principal de la raspi</li>
 </ul>
 </li>
-</ul>
-</li>
+<li>Quit: Revisa si el usuario quiere terminar la simulacion (enter) en caso de querer terminar cierra todos los threads.</li>
 </ul>
 <p>Para la generación de los datos de la IMU y la camara se leen archivos .txt con los datos de aceleración y posición. En el caso del sensor de distancia, se generan numeros aleatorios para representar la posición medida.</p>
-<h2>Comunicaciones</h2>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Comunicaciones</h1>
 <p>Para simular la comunicación utilizo queue con strings como elementos donde voy metiendo los mensajes que quiero mandar a otros dispositivos, y el otro dispositivo lee si le corresponde y si le corresponde lo pop, sino no hace nada.</p>
 <p>Las siguientes queue se utilizan:</p><ul>
 <li>queue 1: Comunicación entre los arduinos y raspi</li>
 <li>queue 2: Comunicación entre la raspi y la camara</li>
 </ul>
-<h2>Envio de datos</h2>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Envio de datos</h2>
 <p>A continuación se muestra la estructura de los mensajes de cada dispositivo. </p><h3>IMU</h3>
 <p>!DAT:IMU:xxxx:yyyy:zzzz:#</p>
 <h3>CAMERA</h3>

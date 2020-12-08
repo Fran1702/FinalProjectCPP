@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['simulador_20sistemas_20embebidos_20robotino',['Simulador Sistemas Embebidos Robotino',['../index.html',1,'']]]
+  ['simulador_20sistemas_20embebidos_3a_20documentación',['Simulador Sistemas Embebidos: Documentación',['../index.html',1,'']]]
 ];
